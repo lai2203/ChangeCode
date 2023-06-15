@@ -12,7 +12,6 @@
 }
 
 .header img {
-  height: 80px;
 }
 .header__logo {
   height: 100%;
@@ -42,6 +41,7 @@
 }
 
 .header__navbar {
+  font-size: xx-large;
   margin-top: 24px;
   height: 46px;
   display: flex;

@@ -72,35 +72,20 @@ const sanphamphobien = [
   {
     id: 1,
     token: "sanphamphobien-1",
-    name: "JOMA SUPER REGATE",
-    img: "./img/product/addidas1.jpg",
-    price: 1000000,
-    des: `Phần trên được sản
-  xuất bằng cách sử
-  dụng sợi nhỏ, nylon và TPU chèn trên nylon để bảo vệ chống nứt nẻ
-  . Joma Super Regate bao gồm công nghệ BẢO VỆ ở cổ chân để tăng cường sức đề kháng
-  và sự ổn định cho đòn đánh. Joma Super Regate có hệ thống thông gió VTS cho phép thở
-  và
-  luồng không khí lớn hơn bên trong Video.
-  Đế lót EVA định hình sẵn có thể điều chỉnh theo hình dạng của bàn chân.
-  Đế được sản xuất bằng EVA tự nhiên góp phần tạo đệm cho Video bằng cách
-  hấp thụ tác động từ bàn chân.`,
+    name: "Dịch Vụ Timelapse",
+    img: "./img/logo/huyminh.webp",
+    // price: 1000000,
+    des: `Cung cấp Gói thuê Quay chụp Time lapse trọn bộ (Lắp đặt, kích hoạt, bảo trì, báo cáo định kỳ)
+    `,
   },
   {
     id: 2,
     token: "sanphamphobien-2",
-    name: "ADIDAS STAN SMITH",
-    img: "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/346234afc6624c3cab59ab7300cc9c57_9366/Giay_Stan_Smith_trang_FU9609_01_standard.jpg",
-    price: 900000,
-    des: `
-  Đúng chất kinh điển.
-  Trước đây, Stan Smith từng là ngôi sao lớn của làng quần vợt.
-  Mang đôi Video adidas xứng tầm tên tuổi của ông, bạn sẽ là ngôi sao đường phố.
-  Từ trên xuống dưới, đôi Video kinh điển này bắt trọn tinh hoa phong cách của kiểu
-  dáng nguyên bản năm
-  1971,
-  với thiết kế bằng da tối giản và đường nét gọn gàng.
-  `,
+    name: "Nền Tảng Timelapse",
+    img: "./img/logo/huyminh.webp",
+    // price: 1000000,
+    des: `Nền tảng time lapse
+    Cung cấp nền tảng Time lapse thông minh có thể kết nối với Camera có sẵn của bạn`,
   },
 ];
 const sanphammoi = [
@@ -1366,12 +1351,12 @@ function renderSanphamPhoBien() {
     <div class="col-lg-6 col-sm-12 mb-20">
     <div class="card" style="width: 100%;">
     <div>
-    <img class="card-img-top" src= ${item.img} alt="Card image cap"  onclick = "getDetailProduct(sanphamphobien,${item.id})">
+    <img class="card-img-top" src= "${item.img}" alt="Card image cap"  onclick = "getDetailProduct(sanphamphobien,${item.id})">
         <div class="card-body">
-            <h4 class="card-title">Joma Super Regate</h4>
+            <h4 class="card-title">${item.name}</h4> 
             <p class="card-text custom__name-product" style="font-weight: 400;">${item.des}</p>
-            <div title="Video ADIDAS 4D FUTURECRAFT"
-                class="btn btn-buynow" onclick = "getDetailProduct(sanphamphobien,${item.id})" >Xem ngay <i class="fas fa-arrow-right"
+            <div title="Video HannaPow"
+                class="btn btn-buynow" onclick = "getDetailProduct(sanphamphobien,${item.id})" >Xem chi tiết  <i class="fas fa-arrow-right"
                     style="font-size: 16px;margin-left: 5px;"></i></div>
         </div>
     </div>
@@ -2078,6 +2063,26 @@ function userLogin() {
     email.length <= 22 &&
     pass.length <= 22
   ) {
-    window.location.href = "thongtin.html";
+    window.location.href = "ProjectManagement.html";
+  }
+}
+
+function addProject() {
+  const projectname = document.querySelector("#projectname").value;
+  const description = document.querySelector("#description").value;
+  if (projectname.length < 22 || description.length < 66) {
+    showErrorLoginMinToast();
+  }
+  if (projectname.length > 22 || description.length > 22) {
+    console.log(projectname.length, description.length)
+    showErrorLoginMaxToast();
+  }
+  if (
+    projectname.length >= 22 &&
+    description.length >= 22 &&
+    projectname.length <= 22 &&
+    description.length <= 22
+  ) {
+    window.location.href = "ProjectManagement.html";
   }
 }

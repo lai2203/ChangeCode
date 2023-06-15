@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #666;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #333;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        span {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Admin Contact</h2>
+
+    <h3>Contact Details:</h3>
+    <p>
+        <strong>Full Name:</strong> <span id="fullname"></span><br>
+        <strong>Email:</strong> <span id="email"></span><br>
+        <strong>Phone:</strong> <span id="phone"></span><br>
+        <strong>Message:</strong> <span id="message"></span><br>
+    </p>
+
+    <script>
+        // Get the query parameters from the URL
+        var queryString = window.location.search.substring(1);
+        var params = new URLSearchParams(queryString);
+
+        // Display the contact details
+        document.getElementById('fullname').textContent = params.get('fullname');
+        document.getElementById('email').textContent = params.get('email');
+        document.getElementById('phone').textContent = params.get('phone');
+        document.getElementById('message').textContent = params.get('message');
+    </script>
+</body>
+
+</html>

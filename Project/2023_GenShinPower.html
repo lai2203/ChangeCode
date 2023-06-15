@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/logo/logohana.jpg">
-    <title>Thông Tin - HanaPower</title>
+    <link rel="icon" href="./../img/logo/logohana.jpg">
+    <title>GenShinPower</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -17,25 +17,38 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
     <!-- link icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" />
     <!-- link css -->
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/trangchu.css">
-    <link rel="stylesheet" href="./css/thongtin.css">
+    <link rel="stylesheet" href="./../css/base.css">
+    <link rel="stylesheet" href="./../css/main.css">
+    <link rel="stylesheet" href="./../css/trangchu.css">
+    <link rel="stylesheet" href="./../css/productdetail.css">
+    <link rel="stylesheet" href="./../css/reponsive1.css">
+    <link rel="stylesheet" href="./../css/language.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.5/css/lightslider.min.css" rel="stylesheet" />
-    <style>
-        .login-right-header {
-            font-size: 32px;
-            text-align: center;
-            font-weight: bold;
-        }
-    </style>
 
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
+<style>
+    #google_translate_element {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
 
+    .header__navbar a {
+        font-size: 25px;
+    }
+
+    .navbar__item a {
+        font-size: 25px;
+    }
+</style>
 
 <body>
 
@@ -46,70 +59,48 @@
 
         <div class="header__logo d-flex col-xl-12">
             <div href="#" class="div-img col-xl-3">
-                <a href="./trangchu"> <a href="./index.html"><img src="./img/logo/logohana.jpg" alt=""></a> </a>
-                <a href="#" class="trangchu">2023-HanaPower</a>
+                <a href="2023_GenShinPower.html"> <a href="./2023_GenShinPower.html"><img
+                            src="./../img/logo/logohana.jpg" alt="" style="height: 90px"></a> </a>
+                <a href="#" class="trangchu">GenShin Power</a>
             </div>
             <div class="col-xl-6">
                 <div class="header__navbar ">
-                    <a href="index.html" class="trangchu">2023-HanaPower</a>
+                    <a href="./2023_GenShinPower.html" class="trangchu">GenShin Power</a>
                     <ul class="navbar__items d-flex">
 
-                        <li class="navbar__item"> <a href="./Statistical.html" class="">Statistical</a>
+                        <li class="navbar__item"> <a href="./../Project/Statistical_HanaPower.html"
+                                class="">Statistical</a>
 
                         </li>
-                        <li class="navbar__item"> <a href="./Chart.html" class="">Chart</a>
+                        <li class="navbar__item"> <a href="./../Project/Chart_HanaPower.html" class="">Chart</a>
 
                         </li>
-                        <li class="navbar__item"> <a href="./Video.html" class="">Video</a>
+                        <li class="navbar__item"> <a href="./../Project/Video_HanaPower.html" class="">Video</a>
 
                         </li>
-                        <li class="navbar__item"> <a href="#" class="">Report</a>
+                        <li class="navbar__item"> <a href="./../Project/Report_HanaPower.html" class="">Report</a>
+                        </li>
+                        <li class="navbar__item"> <a href="./Contact.html" class="">Contact</a>
                         </li>
                     </ul>
+
                 </div>
             </div>
             <div class="col-xl-3 user">
-                <a href="Login.html" class=""> <i class="fas fa-user-circle icon-user"></i></a>
-                <a href="giohang.html" class=""><i class="fas fa-shopping-cart icon-cart"></i></i></a>
+                <a href="./../Search.html" class=""> <i class="fas fa-search"></i></a>
+                <a href="./../Login.html" class=""> <i class="fas fa-user-circle icon-user"></i></a>
+                <!-- <a href="giohang.html" class=""><i class="fas fa-shopping-cart icon-cart"></i></i></a> -->
+                <div id="google_translate_element"></div>
             </div>
         </div>
 
     </header>
-    <!-- slide show -->
-
     <!-- end slide show -->
-    <div class="product">
-        <div class="container">
-            <div class="login-right col-xl-8">
-                <div>
-                    <p class="login-right-header">Thông tin tài khoản</p>
-                    <form class="user-form">
-                        <div class="form-group"><label for="exampleInputPassword1">Tên:</label><input type="text"
-                                class="form-control" id="exampleInputPassword1" name="name"
-                                placeholder="Vui lòng nhập tên của bạn" required="" value="Người dùng thử nghiệm">
-                        </div>
-                        <div class="form-group"><label for="exampleInputEmail1">Email:</label><input type="email"
-                                class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp"
-                                placeholder="Vui lòng nhập nhập email" disabled="" value="abc123@gmail.com"></div>
-                        <div class="form-group"><label for="exampleInputPhone">Số điện thoại liên hệ:</label><input
-                                type="text" class="form-control" id="exampleInputPhone" name="numberPhone"
-                                aria-describedby="emailHelp" placeholder="Vui lòng nhập số điện thoại"
-                                value="0123456789"></div>
-                        <div class="form-group"><label for="exampleInputAddress">Địa chỉ:</label><textarea type="text"
-                                class="form-control" id="exampleInputAddress" name="address"
-                                aria-describedby="emailHelp"
-                                placeholder="Vui lòng nhập địa chỉ">Bạn có thể thử chức năng xác nhận mail khi nhận hàng bằng cách đặt hàng bằng cách nhập form bên ngoài hoặc đăng kí 1 tài khoản bằng email của bạn và đặt hàng bằng tài khoản vừa tạo.</textarea>
-                        </div>
-                        <div class="div-btn"><button type="submit" class="btn btn-submit">Chỉnh sửa</button></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- footer -->
     <footer class="footer ">
         <h3 class="footer-title text-center ">
-            <link rel="icon" href="./img/logo/logohana.jpg" class="brand-image img-circle elevation-3 ">
+            <link rel="icon" href="./../img/logo/logohana.jpg" class="brand-image img-circle elevation-3 ">
             2023-Hanna Power
         </h3>
 
@@ -151,8 +142,39 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.5/js/lightslider.min.js"></script>
         <script src="./js/script.js"></script>
+        <script>
+            renderSanphammoi();
 
 
+
+            function setActiveLanguage(element) {
+
+                // Xóa class "active" từ tất cả các thẻ span có class "active"
+                var activeSpans = document.getElementsByClassName("active");
+                for (var i = 0; i < activeSpans.length; i++) {
+                    activeSpans[i].classList.remove("active");
+                }
+
+                // Thêm class "active" cho thẻ span bên trong thẻ li được nhấp vào
+                var span = element.querySelector("span");
+                span.classList.add("active");
+
+                // Lấy nội dung của thẻ span và gán cho thẻ b có id="language-name"
+                var languageName = document.getElementById("language-name");
+                languageName.textContent = span.textContent;
+            }
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    // config
+                    {
+                        pageLanguage: 'en',
+                        includedLanguages: 'en,vi'
+                    },
+                    // element
+                    'google_translate_element'
+                );
+            }
+        </script>
 </body>
 
 </html>

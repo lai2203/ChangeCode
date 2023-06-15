@@ -1,9 +1,10 @@
 {
   "header": {
-    "home": "Home",
-    "introduce": "Introduce",
-    "product": "Products",
-    "service": "Services",
-    "contact": "Contact Us"
+    "home": "Home Page",
+    "introduce": "Statistical",
+    "product": "Chart",
+    "service": "Video",
+    "contact": "Report",
+    "language":"language"
   }
 }

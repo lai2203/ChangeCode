@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/logo/logohana.jpg">
-    <title>Report</title>
+    <link rel="icon" href="./../img/logo/logohana.jpg">
+    <title>Chart HanaPower</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -19,12 +19,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" />
     <!-- link css -->
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/trangchu.css">
-    <link rel="stylesheet" href="./css/productdetail.css">
-    <link rel="stylesheet" href="./css/reponsive1.css">
-    <link rel="stylesheet" href="./css/language.css">
+    <link rel="stylesheet" href="./../css/base.css">
+    <link rel="stylesheet" href="./../css/main.css">
+    <link rel="stylesheet" href="./../css/trangchu.css">
+    <link rel="stylesheet" href="./../css/productdetail.css">
+    <link rel="stylesheet" href="./../css/reponsive1.css">
+    <link rel="stylesheet" href="./../css/language.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -463,10 +463,6 @@
             justify-content: end;
         }
 
-        .card-header {
-            background-color: forestgreen;
-        }
-
         .form-control {
             font-size: 22px
         }
@@ -494,7 +490,6 @@
 
 
 <body>
-
     <div class="overlay hidden"></div>
     <div id="toast"></div>
 
@@ -502,25 +497,26 @@
 
         <div class="header__logo d-flex col-xl-12">
             <div href="#" class="div-img col-xl-3">
-                <a href="./trangchu"> <a href="./index.html"><img src="./img/logo/logohana.jpg" alt=""
-                            style="height: 90px"></a> </a>
-                <a href="#" class="trangchu">Home Page</a>
+                <a href="2023_HanaPower.html"> <a href="./2023_HanaPower.html"><img src="./../img/logo/logohana.jpg"
+                            alt="" style="height: 90px"></a> </a>
+                <a href="#" class="trangchu">Hana Power</a>
             </div>
             <div class="col-xl-6">
                 <div class="header__navbar ">
-                    <a href="index.html" class="trangchu">Home Page</a>
+                    <a href="./2023_HanaPower.html" class="trangchu">Hana Power</a>
                     <ul class="navbar__items d-flex">
 
-                        <li class="navbar__item"> <a href="./Statistical.html" class="">Statistical</a>
+                        <li class="navbar__item"> <a href="./../Project/Statistical_HanaPower.html"
+                                class="">Statistical</a>
 
                         </li>
-                        <li class="navbar__item"> <a href="./Chart.html" class="">Chart</a>
+                        <li class="navbar__item"> <a href="./../Project/Chart_HanaPower.html" class="">Chart</a>
 
                         </li>
-                        <li class="navbar__item"> <a href="./Video.html" class="">Video</a>
+                        <li class="navbar__item"> <a href="./../Project/Video_HanaPower.html" class="">Video</a>
 
                         </li>
-                        <li class="navbar__item"> <a href="./Report.html" class="">Report</a>
+                        <li class="navbar__item"> <a href="./../Project/Report_HanaPower.html" class="">Report</a>
                         </li>
                         <li class="navbar__item"> <a href="./Contact.html" class="">Contact</a>
                         </li>
@@ -529,80 +525,288 @@
                 </div>
             </div>
             <div class="col-xl-3 user">
-                <a href="Search.html" class=""> <i class="fas fa-search"></i></a>
-                <a href="Login.html" class=""> <i class="fas fa-user-circle icon-user"></i></a>
+                <a href="./../Search.html" class=""> <i class="fas fa-search"></i></a>
+                <a href="./../Login.html" class=""> <i class="fas fa-user-circle icon-user"></i></a>
                 <!-- <a href="giohang.html" class=""><i class="fas fa-shopping-cart icon-cart"></i></i></a> -->
                 <div id="google_translate_element"></div>
             </div>
         </div>
 
     </header>
-
     <!-- end slide show -->
-    <div class="content-wrapper">
-        <div class="container mt-2">
-            <div class="card card-primary">
-                <div class="card-header">
-                    <h5 class="card-title">Export report</h5>
-                </div>
-                <div class="card-body">
-                    <form action="http://nnhaugiang.ddns.net/excel/exportThongKe">
-                        <div class="form-row">
-                            <div class="col-sm-2">
-                                <div class="form-group">
-                                    <label for="select">Choose the output type</label>
-                                    <select id="select" class="form-control" name="type">
-                                        <option value="sensor_data">Sensor data</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-2">
-                                <div class="form-group">
-                                    <label for="select">Choose a start date</label>
-                                    <!-- <input type="text" class="form-control date" name="start-date" readonly> -->
-                                    <input type="date" id="d1" class="form-control date">
+    <script>
+        let pathName = location.href.substring(location.href.lastIndexOf('/') + 1);
+        $(`a[href="./${pathName}"]`).addClass('active')
+    </script>
 
-                                    <!-- <button onclick="calculateDays()">Get Difference</button> -->
-                                    <p id="output"></p>
-                                    <script>
-                                        function calculateDays() {
-                                            var d1 = document.getElementById("d1").value;
-                                            const dateOne = new Date(d1);
-                                            const days = Math.ceil(time / (1000 * 60 * 60 * 24));
-                                            document.getElementById("output").innerHTML = days;
-                                        }
-                                    </script>
-                                </div>
-                            </div>
-                            <div class="col-sm-2">
-                                <div class="form-group">
-                                    <label for="select">Choose an end date</label>
-                                    <!-- <input type="text" class="form-control date" name="end-date" readonly> -->
-                                    <input type="date" id="d2" class="form-control date">
-                                    <p id="output"></p>
-                                    <script>
-                                        function calculateDays() {
-                                            var d2 = document.getElementById("d2").value;
-                                            const dateTwo = new Date(d2);
-                                            const days = Math.ceil(time / (1000 * 60 * 60 * 24));
-                                            document.getElementById("output").innerHTML = days;
-                                        }
-                                    </script>
+    <section class="content">
 
-                                </div>
-                            </div>
-                            <div class="col-sm-2">
-                                <div class="form-group text-center">
-                                    <label for="select" class=""><i class="fa fa-file-excel"></i></label>
-                                    <input type="submit" class="form-control btn-success" value="Export">
-                                </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Default box -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse"
+                                    data-toggle="tooltip" title="Collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-tool" data-card-widget="remove"
+                                    data-toggle="tooltip" title="Remove">
+                                    <i class="fa fa-times"></i>
+                                </button>
                             </div>
                         </div>
-                    </form>
-                </div>
+                        <div class="card-body">
+
+                            <div class="row">
+                                <!-- SELECT: tình trạng -->
+                                <div class="col-sm-10 offset-1">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="row justify-content-sm-center">
+                                                <!-- SELECT: status -->
+                                                <div class="col-md-6 col-12">
+                                                    <select class="form-control" id="formdata" style="width:45%;">
+
+                                                        <option value="1" selected>Daylight</option>
+                                                        <option value="2">Air temperature</option>
+                                                        <option value="3">Humidity</option>
+                                                        <option value="4">Soil temperature</option>
+                                                        <option value="5">Soil moisture</option>
+                                                        <option value="6">TDS</option>
+                                                        <option value="7">Điện thế pin</option>
+                                                        <option value="9">Electrical conductivity</option>
+                                                        <option value="10">Muối</option>
+                                                        <option value="12">Water temperature</option>
+                                                        <option value="13">Độ pH</option>
+                                                        <option value="14">Acquy vol</option>
+                                                        <option value="15">DO</option>
+                                                        <option value="16">Solid PH</option>
+                                                    </select>
+                                                </div>
+                                                <!-- FILTER: range date -->
+                                                <div class="col-md-6 col-12">
+                                                    <div class="d-flex" , style="font-size: 25px">
+                                                        <input type="date" id="d1">
+                                                        <input type="date" id="d2">
+                                                        <!-- <button onclick="calculateDays()">Get Difference</button> -->
+                                                        <p id="output"></p>
+                                                        <script>
+                                                            function calculateDays() {
+                                                                var d1 = document.getElementById("d1").value;
+                                                                var d2 = document.getElementById("d2").value;
+                                                                const dateOne = new Date(d1);
+                                                                const dateTwo = new Date(d2);
+                                                                const time = Math.abs(dateTwo - dateOne);
+                                                                const days = Math.ceil(time / (1000 * 60 * 60 * 24));
+                                                                document.getElementById("output").innerHTML = days;
+                                                            }
+                                                        </script>
+
+                                                        <!-- <div>
+                                                            <input type="date" name="startDate" class="form-control"
+                                                                style="max-width: 200px" readonly>
+                                                        </div>
+                                                        <div>
+                                                            <div id="time-container"></div>
+                                                            <input type="date" name="endDate" class="form-control"
+                                                                style="max-width: 200px" readonly>
+                                                        </div>
+                                                        <form action="" id="form-filter">
+                                                            <input type="date" name="id" value="1" hidden>
+                                                            <input type="date" name="startDate" hidden>
+                                                            <input type="date" name="endDate" hidden>
+                                                            <input type="date" name="startTime" hidden>
+                                                            <input type="date" name="endTime" hidden>
+                                                        </form> -->
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div id="container"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 12pt;">
+                            </span>
+                        </div>
+                    </div> <!-- /.card-body -->
+                    <!-- /.card-footer-->
+                </div> <!-- /.card -->
             </div>
         </div>
-    </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var startDatetimeInput = document.querySelector("input[name='startDatetime']");
+            var endDatetimeInput = document.querySelector("input[name='endDatetime']");
+            var startDateInput = document.querySelector("input[name='startDate']");
+            var endDateInput = document.querySelector("input[name='endDate']");
+            var startTimeInput = document.querySelector("input[name='startTime']");
+            var endTimeInput = document.querySelector("input[name='endTime']");
+
+            // Gọi hàm khởi tạo datetimepicker cho ô input "startDatetime"
+            initializeDatetimepicker(startDatetimeInput, function (selectedDate) {
+                startDateInput.value = selectedDate;
+            });
+
+            // Gọi hàm khởi tạo datetimepicker cho ô input "endDatetime"
+            initializeDatetimepicker(endDatetimeInput, function (selectedDate) {
+                endDateInput.value = selectedDate;
+            });
+
+            function initializeDatetimepicker(inputElement, onSelectDate) {
+                // Gọi hàm khởi tạo datetimepicker
+                // Ví dụ: Sử dụng thư viện jQuery UI Datepicker
+                $(inputElement).datepicker({
+                    dateFormat: "dd/mm/yy",
+                    onSelect: function (dateText, inst) {
+                        onSelectDate(dateText);
+                    }
+                });
+            }
+
+            // Xử lý sự kiện khi submit form
+            document.getElementById("form-filter").addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                // Lấy giá trị ngày tháng và giờ
+                var startDate = startDateInput.value;
+                var endDate = endDateInput.value;
+                var startTime = startTimeInput.value;
+                var endTime = endTimeInput.value;
+
+                // Xử lý logic khi submit form
+                console.log("Start Date:", startDate);
+                console.log("End Date:", endDate);
+                console.log("Start Time:", startTime);
+                console.log("End Time:", endTime);
+            });
+        });
+    </script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('#showExportThongKe').click(function (event) {
+                event.preventDefault();
+                $('input[name="exportThongKe"]').trigger('click');
+            });
+            $('input[name="exportThongKe"]').daterangepicker({
+                timePicker24Hour: true,
+                singleDatePicker: false,
+                showDropdowns: true,
+                minYear: moment().format('y'),
+                startDate: new Date(moment())
+            });
+            $('input[name="exportThongKe"]').on('apply.daterangepicker', function (ev, picker) {
+                let start = picker.startDate.format('YYYY-MM-DD');
+                let end = picker.endDate.format('YYYY-MM-DD');
+                window.location.href = `/excel/exportThongKe?start=${start}&end=${end}`
+            });
+        });
+    </script>
+    <script>
+        var height = $("#container").height();
+        var width = $("#container").width();
+        const formatDate = 'Y-MM-DD HH:mm:ss';
+
+        $(document).ready(function () {
+            $("#formdata").change(function () {
+                const id = $(this).val();
+                window.location = "?id=" + id;
+            });
+        });
+        $(function () {
+            // render: filter with datetimes
+            $('input[name="startDatetime"]').daterangepicker({
+                timePicker: true,
+                timePicker24Hour: true,
+                singleDatePicker: true,
+                showDropdowns: true,
+                minYear: moment().format('y'),
+                startDate: new Date(moment('2023-06-06 00:00:00').format(formatDate)),
+            });
+
+            $('input[name="endDatetime"]').daterangepicker({
+                parentEl: '#time-container',
+                timePicker: true,
+                timePicker24Hour: true,
+                singleDatePicker: true,
+                minYear: moment().format('y'),
+                startDate: new Date(moment('2023-06-06 23:50:00').format(formatDate)),
+            });
+            // function: handle form filter
+            function handleFilterDatetime(type, ev, picker) {
+                const form = $('#form-filter');
+                let data = {
+                    startDate: moment($('[name="startDatetime"]').val()).format('YYYY-MM-DD'),
+                    endDate: moment($('[name="endDatetime"]').val()).format('YYYY-MM-DD'),
+                    startTime: moment($('[name="startDatetime"]').val()).format('HH:mm:ss'),
+                    endTime: moment($('[name="endDatetime"]').val()).format('HH:mm:ss')
+                };
+                if ((moment(data.startDate).diff(data.endDate, 'days')) > 0) {
+                    $('input[name="endDatetime"]')
+                        .data('daterangepicker')
+                        .setStartDate(moment(data.startDate).set('h', 23).set('m', 0).set('s', 0));
+                    data.endDate = moment($('[name="endDatetime"]').val()).format('YYYY-MM-DD');
+                    data.endTime = moment($('[name="endDatetime"]').val()).format('HH:mm:ss');
+                }
+                for (key in data) {
+                    form.find(`[name="${key}"]`).val(data[key]);
+                }
+                setTimeout(() => {
+                    form[0].submit();
+                }, 200);
+            }
+
+            // handle startDateime select
+            $('input[name="startDatetime"]').on('apply.daterangepicker', function (ev, picker) {
+                handleFilterDatetime('startDatetime', ev, picker);
+            });
+            $('input[name="endDatetime"]').on('apply.daterangepicker', function (ev, picker) {
+                handleFilterDatetime('endDatetime', ev, picker);
+            });
+            // render: charts
+            $('#container').highcharts({
+                chart: {
+                    type: 'line',
+                },
+                title: {
+                    text: ''
+                },
+                credits: {
+                    enabled: false
+                },
+                xAxis: {
+                    type: 'datetime',
+                },
+                yAxis: {
+                    title: {
+                        text: ''
+                    }
+                },
+                tooltip: {
+                    valueSuffix: ' '
+                },
+                series: [{
+                    name: '',
+                    data: "",
+                }]
+            });
+
+        });
+
+        Highcharts.setOptions({
+            time: {
+                timezone: 'Asia/Bangkok'
+            }
+        });
+    </script>
+
     <!-- footer -->
     <footer class="footer ">
         <h3 class="footer-title text-center ">
@@ -632,7 +836,8 @@
             </div>
             <div class="col-xl-3 text-center">
                 <i class="fa fa-user"></i>
-                <p>Design by <a href="http://huyminhcantho.com" target="_blank" class="btn-delete">Huy Minh Pro</a></p>
+                <p>Design by <a href="http://huyminhcantho.com" target="_blank" class="btn-delete">Huy Minh Pro</a>
+                </p>
             </div>
 
         </div>
@@ -680,38 +885,6 @@
                     'google_translate_element'
                 );
             }
-        </script>
-        <script>
-            jQuery(document).ready(function ($) {
-                $('#showExportThongKe').click(function (event) {
-                    event.preventDefault();
-                    $('input[name="exportThongKe"]').trigger('click');
-                });
-                $('input[name="exportThongKe"]').daterangepicker({
-                    timePicker24Hour: true,
-                    singleDatePicker: false,
-                    showDropdowns: true,
-                    minYear: moment().format('y'),
-                    startDate: new Date(moment())
-                });
-                $('input[name="exportThongKe"]').on('apply.daterangepicker', function (ev, picker) {
-                    let start = picker.startDate.format('YYYY-MM-DD');
-                    let end = picker.endDate.format('YYYY-MM-DD');
-                    window.location.href = `/excel/exportThongKe?start=${start}&end=${end}`
-                });
-            });
-        </script>
-        <script>
-            $('.date').daterangepicker({
-                singleDatePicker: true,
-                showDropdowns: true,
-                autoApply: true,
-                locale: {
-                    format: 'YYYY-MM-DD',
-                }
-            }, function (start, end, label) {
-                console.log({ start, end, label })
-            });
         </script>
 </body>
 

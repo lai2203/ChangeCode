@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/logo/logohana.jpg">
-    <title>Home Page</title>
+    <title>Project Management</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
     <!-- link icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" />
     <!-- link css -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -46,13 +45,48 @@
         .navbar__item a {
             font-size: 25px;
         }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .card p {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .card a {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: auto;
+        }
+
+        .body {
+            min-height: 100vh;
+            display: flex;
+        }
     </style>
-
-</head>
-
-
-<body>
-
     <div class="overlay hidden"></div>
     <div id="toast"></div>
 
@@ -62,11 +96,11 @@
             <div href="#" class="div-img col-xl-3">
                 <a href="./trangchu"> <a href="./index.html"><img src="./img/logo/logohana.jpg" alt=""
                             style="height: 90px"></a> </a>
-                <a href="#" class="trangchu">Home Page</a>
+                <a href="#" class="trangchu">Trang chủ</a>
             </div>
             <div class="col-xl-6">
                 <div class="header__navbar ">
-                    <a href="index.html" class="trangchu">Home Page</a>
+                    <a href="index.html" class="trangchu">Trang chủ</a>
                     <ul class="navbar__items d-flex">
 
                         <li class="navbar__item"> <a href="./Statistical.html" class="">Statistical</a>
@@ -82,10 +116,7 @@
                         </li>
                         <li class="navbar__item"> <a href="./Contact.html" class="">Contact</a>
                         </li>
-                        <li class="navbar__item"> <a href="./Contact.html" class="">Contact</a>
-                        </li>
                     </ul>
-
                 </div>
             </div>
             <div class="col-xl-3 user">
@@ -96,115 +127,46 @@
             </div>
         </div>
 
-    </header>
-    <!-- slide show -->
-    <div class="mt-4 col-md-12">
-        <ul id="lightSlider">
-            <li>
-                <img src="./img/product/rl1.jpg" class="banner">
-            </li>
+</head>
 
-            <li>
-                <img src="./img/product/rl2.jpg" class="banner">
-            </li>
-            <li>
-                <img src="./img/product/rl3.jpg" class="banner">
-            </li>
-        </ul>
-    </div>
-    <!-- end slide show -->
-    <div class="product">
-        <div class="container">
-            <div class="product_popular">
-                <h3 class="product__popular title-product">Cách dịch vụ chúng tôi có thể cung cấp</h3>
-                <div class="row" id="spphobien">
-
-
-                </div>
-            </div>
-            <div class="product__new">
-                <h3 class="product__ne title-product">Sản phẩm mới</h3>
-                <div class="row" id="">
-
-                </div>
-            </div>
-            <div class="product__sale">
-                <h3 class="product__sale title-product">Top sản phẩm hot</h3>
-                <div class="row" id="">
-
-                </div>
-            </div>
-            <section class="awe-section-9">
-                <div class="section_policy clearfix">
-                    <div class="col-12">
-                        <div class="owl-policy-mobile">
-                            <div class="owl-stage-outer">
-                                <div class="owl-stage">
-                                    <div class="owl-item">
-                                        <div class="section_policy_content">
-                                            <a href="">
-                                                <img src="https://bizweb.dktcdn.net/100/344/983/themes/704702/assets/policy_images_1.png?1628514159582"
-                                                    alt="">
-                                                <div class="section-policy-padding">
-                                                    <h3>Miễn phí vận chuyển</h3>
-                                                    <div class="section_policy_title">Cho các đơn hàng</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item">
-                                        <div class="section_policy_content">
-                                            <a href="">
-                                                <img src="https://bizweb.dktcdn.net/100/344/983/themes/704702/assets/policy_images_2.png?1628514159582"
-                                                    alt="">
-                                                <div class="section-policy-padding">
-                                                    <h3>Hỗ trợ 24/7</h3>
-                                                    <div class="section_policy_title">Liên hệ hỗ trợ 24h/ngày</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item">
-                                        <div class="section_policy_content">
-                                            <a href="">
-                                                <img src="	https://bizweb.dktcdn.net/100/344/983/themes/704702/assets/policy_images_3.png?1628514159582"
-                                                    alt="">
-                                                <div class="section-policy-padding">
-                                                    <h3>Hoàn tiền 100%</h3>
-                                                    <div class="section_policy_title">Nếu sản phẩm bị lỗi, hư hỏng</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item">
-                                        <div class="section_policy_content">
-                                            <a href="">
-                                                <img src="https://bizweb.dktcdn.net/100/344/983/themes/704702/assets/policy_images_4.png?1628514159582"
-                                                    alt="">
-                                                <div class="section-policy-padding">
-                                                    <h3>Thanh toán</h3>
-                                                    <div class="section_policy_title">Được bảo mật 100%</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="product__yml">
-                <h3 class="product__yml title-product">Có thể bạn sẽ thích</h3>
-                <div class="row" id="listProductYml">
-
-                </div>
-            </div>
+<body>
+    <div class="body">
+        <div class="card">
+            <h3>2023-HanaPower</h3>
+            <p>none</p>
+            <a href="./Project/2023_HanaPower.html">View</a>
+        </div>
+        <div class="card">
+            <h3>2023-LienQuanPower</h3>
+            <p>none</p>
+            <a href="./Project/2023_LienQuanPower.html">View</a>
+        </div>
+        <div class="card">
+            <h3>2023-GenshinPower</h3>
+            <p>none</p>
+            <a href="./Project/2023_GenshinPower.html">View</a>
+        </div>
+        <div class="card">
+            <h3>2023-HanaPower</h3>
+            <p>none</p>
+            <a href="./Project/2023_HanaPower.html">View</a>
+        </div>
+        <div class="card">
+            <h3>2023-LienQuanPower</h3>
+            <p>none</p>
+            <a href="./Project/2023_LienQuanPower.html">View</a>
+        </div>
+        <div class="card">
+            <h3>2023-GenshinPower</h3>
+            <p>none</p>
+            <a href="./Project/2023_GenshinPower.html">View</a>
         </div>
     </div>
 
-    </div>
-    <!-- footer -->
+
+
+
+
     <footer class="footer ">
         <h3 class="footer-title text-center ">
             <link rel="icon" href="./img/logo/logohana.jpg" class="brand-image img-circle elevation-3 ">
