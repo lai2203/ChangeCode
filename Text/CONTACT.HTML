@@ -73,6 +73,33 @@
             content: "\f16d";
         }
     </style>
+    <style>
+        .social-icons {
+            position: fixed;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+
+        .social-icons img {
+            width: 100%;
+            height: auto;
+        }
+
+        .social-icons a {
+            display: block;
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 
 <body>
@@ -80,21 +107,27 @@
         <span class="elementor-grid-item">
             <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-a79d483"
                 href="https://www.facebook.com/huyminhprocantho" target="_blank">
-                <span class="elementor-screen-only">Facebook-f</span>
+                <span class="elementor-screen-only"></span>
                 <i class="fab fa-facebook-f"></i> </a>
         </span>
         <span class="elementor-grid-item">
             <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-e6c93ca"
                 href="https://www.youtube.com/@huyminhcantho" target="_blank">
-                <span class="elementor-screen-only">Youtube</span>
+                <span class="elementor-screen-only"></span>
                 <i src="https://autotimelapse.com/wp-content/uploads/2022/04/icon-youtube.png"></i> </a>
         </span>
         <span class="elementor-grid-item">
             <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-2faf370"
                 href="https://www.instagram.com/explore/locations/101345411775166/huy-minh-can-tho/" target="_blank">
-                <span class="elementor-screen-only">Instagram</span>
+                <span class="elementor-screen-only"></span>
                 <i class="fab fa-instagram"></i> </a>
         </span>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/huyminhprocantho"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/explore/locations/101345411775166/huy-minh-can-tho/"><img
+                src="instagram.jpeg" alt="Instagram"></a>
+        <a href="https://www.youtube.com/@huyminhcantho"><img src="youtube.png" alt="YouTube"></a>
     </div>
 </body>
 

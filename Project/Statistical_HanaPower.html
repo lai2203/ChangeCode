@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./../css/productdetail.css">
     <link rel="stylesheet" href="./../css/reponsive1.css">
     <link rel="stylesheet" href="./../css/language.css">
-
+    <link rel="stylesheet" href="./thongke.js">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -33,6 +33,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.5/css/lightslider.min.css" rel="stylesheet" />
     <script type="text/javascript"
         src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <style>
     #google_translate_element {
@@ -68,6 +70,10 @@
         width: 100%;
         max-width: 200px;
     }
+
+    .card-body {
+        background-color: cadetblue;
+    }
 </style>
 
 <body>
@@ -100,7 +106,7 @@
                         </li>
                         <li class="navbar__item"> <a href="./../Project/Report_HanaPower.html" class="">Report</a>
                         </li>
-                        <li class="navbar__item"> <a href="./Contact.html" class="">Contact</a>
+                        <li class="navbar__item"> <a href="./../Contact.html" class="">Contact</a>
                         </li>
                     </ul>
 
@@ -109,13 +115,11 @@
             <div class="col-xl-3 user">
                 <a href="./../Search.html" class=""> <i class="fas fa-search"></i></a>
                 <a href="./../Login.html" class=""> <i class="fas fa-user-circle icon-user"></i></a>
-                <!-- <a href="giohang.html" class=""><i class="fas fa-shopping-cart icon-cart"></i></i></a> -->
                 <div id="google_translate_element"></div>
             </div>
         </div>
 
     </header>
-
     <div class="hold-transition sidebar-mini layout-fixed">
         <!-- Site wrapper -->
         <div class="wrapper">
@@ -125,258 +129,548 @@
                 $(`a[href="./${pathName}"]`).addClass('active')
             </script>
 
+
             <div class="content-wrapper">
                 <div class="container-fluid">
-
                     <div class="row">
                         <div class="col-12">
                             <!-- Default box -->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title"></h3>
-                                    <div class="card-tools">
-                                        <button type="button" class="btn btn-tool" data-card-widget="collapse"
-                                            data-toggle="tooltip" title="Collapse">
-                                            <i class="fa fa-minus"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-tool" data-card-widget="remove"
-                                            data-toggle="tooltip" title="Remove">
-                                            <i class="fa fa-times"></i>
-                                        </button>
+                            <div class="card-group">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">1</h5>
+                                        <div class="col-sm-12" style="padding-top:10px;">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <span>07-04-2022 12:40:18</span>
+                                        </div>
+                                        <div class="col">
+                                            <img src="./../img/product/1.jpg" class="img-thumbnail" alt="image"
+                                                width="100%" height="100%">
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <hr>
+                                                <table class="table table-striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Daylight</td>
+                                                            <td>0 Lux</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Electrical conductivity</td>
+                                                            <td>0 µs/cm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air temperature</td>
+                                                            <td>36.7 °C</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Humidity</td>
+                                                            <td>54.4 %</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Soil temperature</td>
+                                                            <td>31 °C</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Soil moisture</td>
+                                                            <td>99.29 %</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <img src="#" class="img-thumbnail" alt="image" width="100%" height="236">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">2</h5>
+                                        <div class="col-sm-12" style="padding-top:10px;">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <span>07-04-2022 12:40:18</span>
                                         </div>
-                                        <div class="col-sm-8">
-                                            <div class="col-sm-12" style="padding-top:10px;">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>07-04-2022 12:45:11</span>
+                                        <div class="col">
+                                            <img src="./../img/product/1.jpg" class="img-thumbnail" alt="image"
+                                                width="100%" height="100%">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+
+                                                <hr>
+                                                <table class="table table-striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Daylight</td>
+                                                            <td>0 Lux</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Electrical conductivity</td>
+                                                            <td>0 µs/cm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air temperature</td>
+                                                            <td>36.7 °C</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Humidity</td>
+                                                            <td>54.4 %</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Soil temperature</td>
+                                                            <td>31 °C</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Soil moisture</td>
+                                                            <td>99.29 %</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
-                                            <hr>
-                                            <table class="table table-striped">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Daylight</td>
-                                                        <td>0 Lux</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Air temperature</td>
-                                                        <td>36.9 °C</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Soil moisture</td>
-                                                        <td>99.29 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Soil temperature</td>
-                                                        <td>31 °C</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Electrical conductivity</td>
-                                                        <td>0 µs/cm</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Humidity</td>
-                                                        <td>54.8 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Acquy vol</td>
-                                                        <td>-0.43 V</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
                                         </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">3</h5>
+                                        <div class="col-sm-12" style="padding-top:10px;">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <span>07-04-2022 12:40:18</span>
+                                        </div>
+                                        <div class="col">
+                                            <img src="./../img/product/1.jpg" class="img-thumbnail" alt="image"
+                                                width="100%" height="100%">
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col">
+
+                                                <hr>
+                                                <table class="table table-striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Daylight</td>
+                                                            <td>0 Lux</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Electrical conductivity</td>
+                                                            <td>0 µs/cm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air temperature</td>
+                                                            <td>36.7 °C</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Humidity</td>
+                                                            <td>54.4 %</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Soil temperature</td>
+                                                            <td>31 °C</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Soil moisture</td>
+                                                            <td>99.29 %</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-group">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">4</h5>
+                                        <div class="col-sm-12" style="padding-top:10px;">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <span>07-04-2022 12:40:18</span>
+                                        </div>
+                                        <div class="col">
+                                            <img src="./../img/product/1.jpg" class="img-thumbnail" alt="image"
+                                                width="100%" height="100%">
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <hr>
+                                                <table class="table table-striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Daylight</td>
+                                                            <td>0 Lux</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Electrical conductivity</td>
+                                                            <td>0 µs/cm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air temperature</td>
+                                                            <td>36.7 °C</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Humidity</td>
+                                                            <td>54.4 %</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Soil temperature</td>
+                                                            <td>31 °C</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Soil moisture</td>
+                                                            <td>99.29 %</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5</h5>
+                                        <div class="col-sm-12" style="padding-top:10px;">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <span>07-04-2022 12:40:18</span>
+                                        </div>
+                                        <div class="col">
+                                            <img src="./../img/product/1.jpg" class="img-thumbnail" alt="image"
+                                                width="100%" height="100%">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+
+                                                <hr>
+                                                <table class="table table-striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Daylight</td>
+                                                            <td>0 Lux</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Electrical conductivity</td>
+                                                            <td>0 µs/cm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air temperature</td>
+                                                            <td>36.7 °C</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Humidity</td>
+                                                            <td>54.4 %</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Soil temperature</td>
+                                                            <td>31 °C</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Soil moisture</td>
+                                                            <td>99.29 %</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6</h5>
+                                        <div class="col-sm-12" style="padding-top:10px;">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <span>07-04-2022 12:40:18</span>
+                                        </div>
+                                        <div class="col">
+                                            <img src="./../img/product/1.jpg" class="img-thumbnail" alt="image"
+                                                width="100%" height="100%">
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col">
+
+                                                <hr>
+                                                <table class="table table-striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Daylight</td>
+                                                            <td>0 Lux</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Electrical conductivity</td>
+                                                            <td>0 µs/cm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Air temperature</td>
+                                                            <td>36.7 °C</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Humidity</td>
+                                                            <td>54.4 %</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Soil temperature</td>
+                                                            <td>31 °C</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Soil moisture</td>
+                                                            <td>99.29 %</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <!-- Default box -->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">252385</h3>
-                                    <div class="card-tools">
-                                        <button type="button" class="btn btn-tool" data-card-widget="collapse"
-                                            data-toggle="tooltip" title="Collapse">
-                                            <i class="fa fa-minus"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-tool" data-card-widget="remove"
-                                            data-toggle="tooltip" title="Remove">
-                                            <i class="fa fa-times"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <img src="http://baokhoa.ddns.net/nncnc/area_11_freq_5_20220407_0152.jpg"
-                                                class="img-thumbnail" alt="image" width="100%" height="236">
-                                        </div>
-                                        <div class="col-sm-8">
-                                            <div class="col-sm-12" style="padding-top:10px;">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span>07-04-2022 12:40:18</span>
-                                            </div>
-                                            <hr>
-                                            <table class="table table-striped">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Daylight</td>
-                                                        <td>0 Lux</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Electrical conductivity</td>
-                                                        <td>0 µs/cm</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Air temperature</td>
-                                                        <td>36.7 °C</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Humidity</td>
-                                                        <td>54.4 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Soil temperature</td>
-                                                        <td>31 °C</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Soil moisture</td>
-                                                        <td>99.29 %</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                     <ul class="pagination" role="navigation">
 
-                        <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+                        <!-- <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
                             <span class="page-link" aria-hidden="true">&lsaquo;</span>
-                        </li>
-                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                        </li> -->
+                        <!-- <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
                         <li class="page-item"><a class="page-link"
-                                href="http://nnhaugiang.ddns.net/ThongKe?page=2">2</a></li>
+                                href="http://127.0.0.1:5501/Project/Statistical_HanaPower.html?page=2">2</a></li>
                         <li class="page-item"><a class="page-link"
-                                href="http://nnhaugiang.ddns.net/ThongKe?page=3">3</a></li>
+                                href="http://127.0.0.1:5501/Project/Statistical_HanaPower.html?page=3">3</a></li>
                         <li class="page-item"><a class="page-link"
-                                href="http://nnhaugiang.ddns.net/ThongKe?page=4">4</a></li>
+                                href="http://127.0.0.1:5501/Project/Statistical_HanaPower.html?page=4">4</a></li>
                         <li class="page-item"><a class="page-link"
-                                href="http://nnhaugiang.ddns.net/ThongKe?page=5">5</a></li>
+                                href="http://127.0.0.1:5501/Project/Statistical_HanaPower.html?page=5">5</a></li>
                         <li class="page-item"><a class="page-link"
-                                href="http://nnhaugiang.ddns.net/ThongKe?page=6">6</a></li>
+                                href="http://127.0.0.1:5501/Project/Statistical_HanaPower.html?page=6">6</a></li>
                         <li class="page-item"><a class="page-link"
-                                href="http://nnhaugiang.ddns.net/ThongKe?page=7">7</a></li>
+                                href="http://127.0.0.1:5501/Project/Statistical_HanaPower.html?page=7">7</a></li>
                         <li class="page-item"><a class="page-link"
-                                href="http://nnhaugiang.ddns.net/ThongKe?page=8">8</a></li>
+                                href="http://127.0.0.1:5501/Project/Statistical_HanaPower.html?page=8">8</a></li>
                         <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
                         <li class="page-item"><a class="page-link"
-                                href="http://nnhaugiang.ddns.net/ThongKe?page=2887">2887</a></li>
+                                href="http://127.0.0.1:5501/Project/Statistical_HanaPower.html?page=2887">2887</a></li>
                         <li class="page-item"><a class="page-link"
-                                href="http://nnhaugiang.ddns.net/ThongKe?page=2888">2888</a></li>
+                                href="http://127.0.0.1:5501/Project/Statistical_HanaPower.html?page=2888">2888</a></li>
                         <li class="page-item">
-                            <a class="page-link" href="http://nnhaugiang.ddns.net/ThongKe?page=2" rel="next"
-                                aria-label="Next &raquo;">&rsaquo;</a>
-                        </li>
+                            <a class="page-link" href="http://127.0.0.1:5501/Project/Statistical_HanaPower.html?page=2"
+                                rel="next" aria-label="Next &raquo;">&rsaquo;</a>
+                        </li> -->
                     </ul>
+                    <div id="pagination-container"></div>
+
+                    <script>
+                        // Số trang hiện tại
+                        var currentPage = 1;
+                        // Tổng số trang
+                        var totalPages = 2888;
+                        // Số lượng trang hiển thị trong thanh pagination
+                        var displayPages = 7;
+
+                        // Lấy phần tử cha để thêm pagination vào
+                        var paginationContainer = document.getElementById('pagination-container');
+
+                        // Tạo danh sách ul và gán class
+                        var ul = document.createElement('ul');
+                        ul.className = 'pagination';
+
+                        // Tạo nút previous
+                        var previousLi = createPageItem('«', currentPage <= 1, currentPage - 1);
+                        ul.appendChild(previousLi);
+
+                        // Tạo các nút trang
+                        var startPage = Math.max(1, currentPage - Math.floor(displayPages / 2));
+                        var endPage = Math.min(startPage + displayPages - 1, totalPages);
+
+                        for (var i = startPage; i <= endPage; i++) {
+                            var pageLi = createPageItem(i, currentPage === i, i);
+                            ul.appendChild(pageLi);
+                        }
+
+                        // Tạo nút next
+                        var nextLi = createPageItem('»', currentPage >= totalPages, currentPage + 1);
+                        ul.appendChild(nextLi);
+
+                        // Thêm danh sách ul vào phần tử cha
+                        paginationContainer.appendChild(ul);
+
+                        // Hàm tạo một phần tử li trong pagination
+                        function createPageItem(text, isDisabled, page) {
+                            var li = document.createElement('li');
+                            li.className = 'page-item' + (isDisabled ? ' disabled' : '');
+                            li.setAttribute('aria-disabled', isDisabled);
+
+                            var link = document.createElement('a');
+                            link.className = 'page-link';
+                            link.textContent = text;
+
+                            if (!isDisabled) {
+                                link.href = 'http://127.0.0.1:5501/Project/Statistical_HanaPower.html?page=' + page;
+                            }
+
+                            li.appendChild(link);
+
+                            return li;
+                        }
+                    </script>
+
 
                 </div>
             </div>
 
-            <script>
-                $(document).ready(function () {
-                    // Khởi tạo date range picker
-                    $('input[name="startDatetime"]').daterangepicker({
-                        singleDatePicker: true,
-                        showDropdowns: true,
-                        autoUpdateInput: false,
-                        locale: {
-                            format: 'YYYY-MM-DD',
-                            cancelLabel: 'Clear'
-                        }
-                    });
-
-                    $('input[name="endDatetime"]').daterangepicker({
-                        singleDatePicker: true,
-                        showDropdowns: true,
-                        autoUpdateInput: false,
-                        locale: {
-                            format: 'YYYY-MM-DD',
-                            cancelLabel: 'Clear'
-                        }
-                    });
-
-                    // Cập nhật ngày khi người dùng chọn
-                    $('input[name="startDatetime"]').on('apply.daterangepicker', function (ev, picker) {
-                        $(this).val(picker.startDate.format('YYYY-MM-DD'));
-                        $('input[name="startDate"]').val(picker.startDate.format('YYYY-MM-DD'));
-                    });
-
-                    $('input[name="endDatetime"]').on('apply.daterangepicker', function (ev, picker) {
-                        $(this).val(picker.startDate.format('YYYY-MM-DD'));
-                        $('input[name="endDate"]').val(picker.startDate.format('YYYY-MM-DD'));
-                    });
-
-                    // Xóa ngày khi người dùng bấm "Clear"
-                    $('input[name="startDatetime"]').on('cancel.daterangepicker', function (ev, picker) {
-                        $(this).val('');
-                        $('input[name="startDate"]').val('');
-                    });
-
-                    $('input[name="endDatetime"]').on('cancel.daterangepicker', function (ev, picker) {
-                        $(this).val('');
-                        $('input[name="endDate"]').val('');
-                    });
-                });
-            </script>
-
-            <!-- Control Sidebar -->
-            <aside class="control-sidebar control-sidebar-dark">
-                <!-- Control sidebar content goes here -->
-            </aside>
-            <!-- /.control-sidebar -->
         </div>
-        <!-- ./wrapper -->
+        <!-- <ul class="pagination" role="navigation">
 
-        <!-- jQuery -->
-
-        <!-- Bootstrap 4 -->
-        <script src="/js/bootstrap.bundle.min.js"></script>
-        <!-- overlayScrollbars -->
-
-        <!-- AdminLTE App -->
-        <script src="/js/adminlte.min.js"></script>
-        <!-- AdminLTE for demo purposes -->
-        <link rel="stylesheet" type="text/css"
-            href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-        <script>
-            jQuery(document).ready(function ($) {
-                $('#showExportThongKe').click(function (event) {
-                    event.preventDefault();
-                    $('input[name="exportThongKe"]').trigger('click');
-                });
-                $('input[name="exportThongKe"]').daterangepicker({
-                    timePicker24Hour: true,
-                    singleDatePicker: false,
-                    showDropdowns: true,
-                    minYear: moment().format('y'),
-                    startDate: new Date(moment())
-                });
-                $('input[name="exportThongKe"]').on('apply.daterangepicker', function (ev, picker) {
-                    let start = picker.startDate.format('YYYY-MM-DD');
-                    let end = picker.endDate.format('YYYY-MM-DD');
-                    window.location.href = `/excel/exportThongKe?start=${start}&end=${end}`
-                });
-            });
-        </script>
+            <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+                <span class="page-link" aria-hidden="true">&lsaquo;</span>
+            </li>
+            <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+            <li class="page-item"><a class="page-link" href="http://nnhaugiang.ddns.net/ThongKe?page=2">2</a></li>
+            <li class="page-item"><a class="page-link" href="http://nnhaugiang.ddns.net/ThongKe?page=3">3</a></li>
+            <li class="page-item"><a class="page-link" href="http://nnhaugiang.ddns.net/ThongKe?page=4">4</a></li>
+            <li class="page-item"><a class="page-link" href="http://nnhaugiang.ddns.net/ThongKe?page=5">5</a></li>
+            <li class="page-item"><a class="page-link" href="http://nnhaugiang.ddns.net/ThongKe?page=6">6</a></li>
+            <li class="page-item"><a class="page-link" href="http://nnhaugiang.ddns.net/ThongKe?page=7">7</a></li>
+            <li class="page-item"><a class="page-link" href="http://nnhaugiang.ddns.net/ThongKe?page=8">8</a></li>
+            <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+            <li class="page-item"><a class="page-link" href="http://nnhaugiang.ddns.net/ThongKe?page=2887">2887</a></li>
+            <li class="page-item"><a class="page-link" href="http://nnhaugiang.ddns.net/ThongKe?page=2888">2888</a></li>
+            <li class="page-item">
+                <a class="page-link" href="http://nnhaugiang.ddns.net/ThongKe?page=2" rel="next"
+                    aria-label="Next &raquo;">&rsaquo;</a>
+            </li>
+        </ul> -->
 
     </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Khởi tạo date range picker
+            $('input[name="startDatetime"]').daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: true,
+                autoUpdateInput: false,
+                locale: {
+                    format: 'YYYY-MM-DD',
+                    cancelLabel: 'Clear'
+                }
+            });
+
+            $('input[name="endDatetime"]').daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: true,
+                autoUpdateInput: false,
+                locale: {
+                    format: 'YYYY-MM-DD',
+                    cancelLabel: 'Clear'
+                }
+            });
+
+            // Cập nhật ngày khi người dùng chọn
+            $('input[name="startDatetime"]').on('apply.daterangepicker', function (ev, picker) {
+                $(this).val(picker.startDate.format('YYYY-MM-DD'));
+                $('input[name="startDate"]').val(picker.startDate.format('YYYY-MM-DD'));
+            });
+
+            $('input[name="endDatetime"]').on('apply.daterangepicker', function (ev, picker) {
+                $(this).val(picker.startDate.format('YYYY-MM-DD'));
+                $('input[name="endDate"]').val(picker.startDate.format('YYYY-MM-DD'));
+            });
+
+            // Xóa ngày khi người dùng bấm "Clear"
+            $('input[name="startDatetime"]').on('cancel.daterangepicker', function (ev, picker) {
+                $(this).val('');
+                $('input[name="startDate"]').val('');
+            });
+
+            $('input[name="endDatetime"]').on('cancel.daterangepicker', function (ev, picker) {
+                $(this).val('');
+                $('input[name="endDate"]').val('');
+            });
+        });
+    </script>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+
+    <!-- Bootstrap 4
+        <script src="/js/bootstrap.bundle.min.js"></scrip >
+    overlayScrollbars -->
+
+    <!--AdminLTE App-->
+    <script src="/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script>
+        jQuery(document).ready(function ($) {
+            $('#showExportThongKe').click(function (event) {
+                event.preventDefault();
+                $('input[name="exportThongKe"]').trigger('click');
+            });
+            $('input[name="exportThongKe"]').daterangepicker({
+                timePicker24Hour: true,
+                singleDatePicker: false,
+                showDropdowns: true,
+                minYear: moment().format('y'),
+                startDate: new Date(moment())
+            });
+            $('input[name="exportThongKe"]').on('apply.daterangepicker', function (ev, picker) {
+                let start = picker.startDate.format('YYYY-MM-DD');
+                let end = picker.endDate.format('YYYY-MM-DD');
+                window.location.href = `/excel/exportThongKe?start=${start}&end=${end}`
+            });
+        });
+    </script>
+
+    <script>
+        // Lấy tất cả các phần tử có lớp CSS là "col"
+        var colElements = document.getElementsByClassName("col");
+
+        // Lặp qua các phần tử và thêm sự kiện click
+        for (var i = 0; i < colElements.length; i++) {
+            colElements[i].addEventListener("click", function () {
+                // Tìm phần tử "row" liền kề với phần tử "col" được nhấp
+                var rowElement = this.nextElementSibling;
+
+                // Kiểm tra trạng thái hiển thị của phần tử "row"
+                if (rowElement.style.display === "none") {
+                    // Nếu đang ẩn, hiển thị phần tử "row"
+                    rowElement.style.display = "block";
+                } else {
+                    // Nếu đang hiển thị, ẩn đi
+                    rowElement.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+    </div>
+
+
+
+
+
+
+
 
 
     <!-- footer -->
@@ -425,10 +719,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.5/js/lightslider.min.js"></script>
         <script src="./js/script.js"></script>
         <script>
-            renderSanphammoi();
-
-
-
             function setActiveLanguage(element) {
 
                 // Xóa class "active" từ tất cả các thẻ span có class "active"

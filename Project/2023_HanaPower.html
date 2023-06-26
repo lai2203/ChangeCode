@@ -48,13 +48,46 @@
     .navbar__item a {
         font-size: 25px;
     }
+
+    /* css cho icons*/
+    .social-icons {
+        position: fixed;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        z-index: 99999;
+    }
+
+    .social-icons img {
+        width: 100%;
+        height: auto;
+    }
+
+    .social-icons a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    .social-icons a:hover {
+        transform: scale(1.2);
+    }
 </style>
 
 <body>
 
     <div class="overlay hidden"></div>
     <div id="toast"></div>
-
+    <div class="social-icons">
+        <a href="https://www.facebook.com/huyminhprocantho"><img src="./../img/product/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/explore/locations/101345411775166/huy-minh-can-tho/"><img
+                src="./../img/product/instagram.jpeg" alt="Instagram"></a>
+        <a href="https://www.youtube.com/@huyminhcantho"><img src="./../img/product/youtube.png" alt="YouTube"></a>
+    </div>
     <header class="header ">
 
         <div class="header__logo d-flex col-xl-12">
@@ -80,7 +113,7 @@
                         </li>
                         <li class="navbar__item"> <a href="./../Project/Report_HanaPower.html" class="">Report</a>
                         </li>
-                        <li class="navbar__item"> <a href="./Contact.html" class="">Contact</a>
+                        <li class="navbar__item"> <a href="./../Contact.html" class="">Contact</a>
                         </li>
                     </ul>
 
@@ -89,13 +122,119 @@
             <div class="col-xl-3 user">
                 <a href="./../Search.html" class=""> <i class="fas fa-search"></i></a>
                 <a href="./../Login.html" class=""> <i class="fas fa-user-circle icon-user"></i></a>
-                <!-- <a href="giohang.html" class=""><i class="fas fa-shopping-cart icon-cart"></i></i></a> -->
                 <div id="google_translate_element"></div>
             </div>
         </div>
 
     </header>
     <!-- end slide show -->
+    <div class="mt-4 col-md-12">
+        <ul id="lightSlider">
+            <li>
+                <img src="./../img/product/rl1.jpg" class="banner">
+            </li>
+
+            <li>
+                <img src="./../img/product/rl2.jpg" class="banner">
+            </li>
+            <li>
+                <img src="./../img/product/rl3.jpg" class="banner">
+            </li>
+        </ul>
+    </div>
+    <!-- end slide show -->
+    <div class="product">
+        <div class="container">
+            <div class="product_popular">
+                <h3 class="product__popular title-product">Cách dịch vụ chúng tôi có thể cung cấp</h3>
+                <div class="row" id="spphobien">
+
+
+                </div>
+            </div>
+            <div class="product__new">
+                <h3 class="product__ne title-product">Sản phẩm mới</h3>
+                <div class="row" id="">
+
+                </div>
+            </div>
+            <div class="product__sale">
+                <h3 class="product__sale title-product">Top sản phẩm hot</h3>
+                <div class="row" id="">
+
+                </div>
+            </div>
+            <section class="awe-section-9">
+                <div class="section_policy clearfix">
+                    <div class="col-12">
+                        <div class="owl-policy-mobile">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage">
+                                    <div class="owl-item">
+                                        <div class="section_policy_content">
+                                            <a href="">
+                                                <img src="https://bizweb.dktcdn.net/100/344/983/themes/704702/assets/policy_images_1.png?1628514159582"
+                                                    alt="">
+                                                <div class="section-policy-padding">
+                                                    <h3>Miễn phí vận chuyển</h3>
+                                                    <div class="section_policy_title">Cho các đơn hàng</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item">
+                                        <div class="section_policy_content">
+                                            <a href="">
+                                                <img src="https://bizweb.dktcdn.net/100/344/983/themes/704702/assets/policy_images_2.png?1628514159582"
+                                                    alt="">
+                                                <div class="section-policy-padding">
+                                                    <h3>Hỗ trợ 24/7</h3>
+                                                    <div class="section_policy_title">Liên hệ hỗ trợ 24h/ngày</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item">
+                                        <div class="section_policy_content">
+                                            <a href="">
+                                                <img src="	https://bizweb.dktcdn.net/100/344/983/themes/704702/assets/policy_images_3.png?1628514159582"
+                                                    alt="">
+                                                <div class="section-policy-padding">
+                                                    <h3>Hoàn tiền 100%</h3>
+                                                    <div class="section_policy_title">Nếu sản phẩm bị lỗi, hư hỏng</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item">
+                                        <div class="section_policy_content">
+                                            <a href="">
+                                                <img src="https://bizweb.dktcdn.net/100/344/983/themes/704702/assets/policy_images_4.png?1628514159582"
+                                                    alt="">
+                                                <div class="section-policy-padding">
+                                                    <h3>Thanh toán</h3>
+                                                    <div class="section_policy_title">Được bảo mật 100%</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="product__yml">
+                <h3 class="product__yml title-product">Có thể bạn sẽ thích</h3>
+                <div class="row" id="listProductYml">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <!-- footer -->
     <footer class="footer ">
@@ -141,7 +280,7 @@
         <!-- end modal -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.5/js/lightslider.min.js"></script>
-        <script src="./js/script.js"></script>
+        <script src="./../js/script.js"></script>
         <script>
             renderSanphammoi();
 

@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="./css/productdetail.css">
     <link rel="stylesheet" href="./css/reponsive1.css">
     <link rel="stylesheet" href="./css/language.css">
+    <link rel="stylesheet" href="./admin_contact.html">
+    <link rel="stylesheet" href="./Text/Project_Data.js">
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -50,8 +54,35 @@
     .navbar__item a {
         font-size: 25px;
     }
-</style>
-<style>
+
+    /* css cho icons*/
+    .social-icons {
+        position: fixed;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        z-index: 99999;
+    }
+
+    .social-icons img {
+        width: 100%;
+        height: auto;
+    }
+
+    .social-icons a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    .social-icons a:hover {
+        transform: scale(1.2);
+    }
+
     .container {
         display: flex;
         max-width: 900px;
@@ -65,17 +96,6 @@
 
     .contact-info a {
         font-size: 25px;
-    }
-
-    .phone {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .phone img {
-        width: 100px;
-        margin-right: 10px;
     }
 
     .contact-form {
@@ -117,9 +137,17 @@
 
     <div class="overlay hidden"></div>
     <div id="toast"></div>
+    <div class="social-icons">
+        <a href="tel:0345771234"><img
+                src="https://media.istockphoto.com/id/1074894352/vi/vec-to/bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-%C4%91i%E1%BB%87n-tho%E1%BA%A1i-%C4%91en-tr%E1%BA%AFng-bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-%C4%91i%E1%BB%87n-tho%E1%BA%A1i-vector-%C4%91%C6%B0%E1%BB%A3c-ph%C3%A2n-l%E1%BA%ADp-tr%C3%AAn-n%E1%BB%81n-tr%E1%BA%AFng.jpg?s=612x612&w=0&k=20&c=q10tnKyMShQQ6iWKcivFQLpugATdAm0d_xyH5WRxtyg="
+                alt="Phone"> </a>
+        <a href="https://www.facebook.com/huyminhprocantho"><img src="./img/product/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/explore/locations/101345411775166/huy-minh-can-tho/"><img
+                src="./img/product/instagram.jpeg" alt="Instagram"></a>
+        <a href="https://www.youtube.com/@huyminhcantho"><img src="./img/product/youtube.png" alt="YouTube"></a>
 
+    </div>
     <header class="header ">
-
         <div class="header__logo d-flex col-xl-12">
             <div href="#" class="div-img col-xl-3">
                 <a href="./trangchu"> <a href="./index.html"><img src="./img/logo/logohana.jpg" alt=""
@@ -151,32 +179,30 @@
             <div class="col-xl-3 user">
                 <a href="Search.html" class=""> <i class="fas fa-search"></i></a>
                 <a href="Login.html" class=""> <i class="fas fa-user-circle icon-user"></i></a>
-                <!-- <a href="giohang.html" class=""><i class="fas fa-shopping-cart icon-cart"></i></i></a> -->
                 <div id="google_translate_element"></div>
             </div>
         </div>
-
     </header>
 
     <div class="container">
         <div class="contact-info">
-            <div class="phone">
+            <div class="phone" href="tel:0345771234">
                 <img src="https://media.istockphoto.com/id/1074894352/vi/vec-to/bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-%C4%91i%E1%BB%87n-tho%E1%BA%A1i-%C4%91en-tr%E1%BA%AFng-bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-%C4%91i%E1%BB%87n-tho%E1%BA%A1i-vector-%C4%91%C6%B0%E1%BB%A3c-ph%C3%A2n-l%E1%BA%ADp-tr%C3%AAn-n%E1%BB%81n-tr%E1%BA%AFng.jpg?s=612x612&w=0&k=20&c=q10tnKyMShQQ6iWKcivFQLpugATdAm0d_xyH5WRxtyg="
                     alt="Phone Icon" height="100px">
-                <span style="font-size: 30px">0345771234</span>
-                <i class="fa-solid fa-phone"></i>
+                <a href="tel:0345771234" style="font-size: 30px">0345771234</a>
             </div>
             <div class="mail">
                 <img src="https://static.vecteezy.com/system/resources/thumbnails/002/205/854/small/email-icon-free-vector.jpg"
                     alt="Mail Icon" height="100px" weight="100px">
                 <a style="color: black" href="http://huyminhcantho.com">huyminhcantho@gmail.com</a>
             </div>
-
-
             <div class="map">
-                <a href="https://www.google.com/maps/place/C%C3%B4ng+ty+TNHH+TM+DV+C%C3%B4ng+Ngh%E1%BB%87+Huy+Minh+Pro/
-                @10.0435995,105.7531983,15z/data=!4m6!3m5!1s0x31a089a2a425f779:0xb3dbe439e276ed88!8m2!3d10.0435995!4d105.7531983!
-                16s%2Fg%2F11sr0h1lwp?entry=ttu">HUY MINH PRO</a>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.6756692299077!2d105.75100961432315!3d10.043599492821317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a089a2a425f779%3A0xb3dbe439e276ed88!2sC%C3%94NG%20TY%20TNHH%20TM%20DV%20C%C3%94NG%20NGH%E1%BB%86%20HUY%20MINH%20PRO!5e0!3m2!1svi!2s!4v1654092532633!5m2!1svi!2s"
+                    width="300" height="150" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- <iframe src="https://www.google.com/maps/place/C%C3%B4ng+ty+TNHH+TM+DV+C%C3%B4ng+Ngh%E1%BB%87+Huy+Minh+Pro/@10.0435995,105.7483274,17z/data=!3m1!4b1!4m6!3m5!1s0x31a089a2a425f779:0xb3dbe439e276ed88!8m2!3d10.0435995!4d105.7531983!16s%2Fg%2F11sr0h1lwp?hl=vi-VN&entry=ttu"
+                    width="200px" height="200px" frameborder="0" style="border:0"> -->
             </div>
         </div>
         <div class="contact-form">
@@ -188,94 +214,50 @@
                 <textarea id="message" placeholder="Message"></textarea>
                 <button type="button" id="sendButton">Send</button>
             </form>
+            <div id="resultContainer" style="display: none;">
+                <h2>Thank You!</h2>
+                <p>Your message has been sent successfully.</p>
+            </div>
         </div>
-    </div>
 
-    <div id="resultContainer" style="display: none;">
-        <h2>Thank You!</h2>
-        <p>Your message has been sent successfully.</p>
-    </div>
-    <script
-        src="https://www.google.com/maps/place/C%C3%B4ng+ty+TNHH+TM+DV+C%C3%B4ng+Ngh%E1%BB%87+Huy+Minh+Pro/@10.0435995,105.7531983,15z/data=!4m6!3m5!1s0x31a089a2a425f779:0xb3dbe439e276ed88!8m2!3d10.0435995!4d105.7531983!16s%2Fg%2F11sr0h1lwp?entry=ttu"
-        async defer></script>
-    <script>
-        // Function to handle form submission
-        function handleSubmit() {
-            // Get form values
-            var fullname = document.getElementById('fullname').value;
-            var email = document.getElementById('email').value;
-            var phone = document.getElementById('phone').value;
-            var message = document.getElementById('message').value;
+        <script>
+            // Lấy tham chiếu đến các phần tử HTML
+            var sendButton = document.getElementById('sendButton');
+            var resultContainer = document.getElementById('resultContainer');
+            var contactForm = document.getElementById('contactForm');
+            var fullnameInput = document.getElementById('fullname');
+            var emailInput = document.getElementById('email');
+            var phoneInput = document.getElementById('phone');
+            var messageInput = document.getElementById('message');
 
-            // Perform validation
-            if (!fullname || !email || !phone) {
-                alert('Please fill in all required fields.');
-                return;
-            }
+            // Tạo sự kiện click cho nút gửi
+            sendButton.addEventListener('click', function () {
+                // Lấy giá trị từ các trường input
+                var fullname = fullnameInput.value;
+                var email = emailInput.value;
+                var phone = phoneInput.value;
+                var message = messageInput.value;
 
-            // Create a data object with the form values
-            var data = {
-                fullname: fullname,
-                email: email,
-                phone: phone,
-                message: message
-            };
-
-            // Send the data to the admin contact page (you can replace the URL with your own)
-            var url = 'admin-contact.html'; // Change this to the URL of your admin contact page
-            var queryString = Object.keys(data).map(key => key + '=' + encodeURIComponent(data[key])).join('&');
-            var adminContactURL = url + '?' + queryString;
-            window.location.href = adminContactURL;
-        }
-
-        // Attach event listener to the send button
-        var sendButton = document.getElementById('sendButton');
-        sendButton.addEventListener('click', handleSubmit);
-
-
-        // Initialize and display the map
-        <!-- function initMap() {
-            var mapContainer = document.getElementById('map');
-            var options = {
-                center: { lat: 37.7749, lng: -122.4194 }, // Set the coordinates of your desired map center
-                zoom: 12 // Set the initial zoom level
-            };
-
-            var map = new google.maps.Map(mapContainer, options);
-        } -->
-        // Initialize Google Maps
-        function initMap() {
-            // Get the latitude and longitude of the address using Geocoding API
-            var geocoder = new google.maps.Geocoder();
-            var address = "43 Đường số 9, Khu tái định cư Thới Nhựt 2, Ninh Kiều, Cần Thơ, Việt Nam";
-
-            geocoder.geocode({ 'address': address }, function (results, status) {
-                if (status === 'OK') {
-                    var location = results[0].geometry.location;
-
-                    // Create a new map centered at the location
-                    var map = new google.maps.Map(document.getElementById('map'), {
-                        center: location,
-                        zoom: 15
-                    });
-
-                    // Add a marker at the location
-                    var marker = new google.maps.Marker({
-                        position: location,
-                        map: map,
-                        title: address
-                    });
-                } else {
-                    alert('Geocode was not successful for the following reason: ' + status);
+                // Kiểm tra xem các trường bắt buộc đã được điền đầy đủ hay chưa
+                if (!fullname || !email || !phone) {
+                    alert('Please fill in all required fields.');
+                    return;
                 }
-            });
-        }
-    </script>
-    <script
-        src="https://www.google.com/maps/place/C%C3%B4ng+ty+TNHH+TM+DV+C%C3%B4ng+Ngh%E1%BB%87+Huy+Minh+Pro/@10.0435995,105.7506234,17z/data=!3m1!4b1!4m6!3m5!1s0x31a089a2a425f779:0xb3dbe439e276ed88!8m2!3d10.0435995!4d105.7531983!16s%2Fg%2F11sr0h1lwp?hl=vi&entry=ttu"
-        async defer></script>
 
-    </script>
+                // Ẩn form và hiển thị kết quả thành công
+                contactForm.style.display = 'none';
+                resultContainer.style.display = 'block';
+            });
+        </script>
+    </div>
+
+
+
+
+
+
+
+
 
 
     <!-- footer -->
@@ -298,7 +280,7 @@
             </div>
             <div class="col-xl-3 text-center">
                 <i class="far fa-envelope"></i>
-                <a style="color: black" href="http://huyminhcantho.com">huyminhcantho@gmail.com</a>
+                <p class="">huyminhcantho@gmail.com</p>
             </div>
             <div class="col-xl-3 text-center">
                 <i class="fa fa-phone"></i>
@@ -324,10 +306,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.5/js/lightslider.min.js"></script>
         <script src="./js/script.js"></script>
         <script>
-            renderSanphammoi();
-
-
-
             function setActiveLanguage(element) {
 
                 // Xóa class "active" từ tất cả các thẻ span có class "active"
