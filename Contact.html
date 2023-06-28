@@ -85,7 +85,6 @@
 
     .container {
         display: flex;
-        max-width: 900px;
         margin: 0 auto;
         padding: 20px;
     }
@@ -106,6 +105,24 @@
 
     h2 {
         text-align: center;
+    }
+
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(./img/product/background.jpg);
+        background-size: cover;
+        filter: blur(10px);
+        z-index: -1;
+    }
+
+    h1,
+    p {
+        position: relative;
+        z-index: 1;
     }
 
     form input,
@@ -131,9 +148,15 @@
         text-align: center;
         margin-top: 20px;
     }
+
+    .map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 </style>
 
-<body>
+<>
 
     <div class="overlay hidden"></div>
     <div id="toast"></div>
@@ -183,7 +206,8 @@
             </div>
         </div>
     </header>
-
+    <div class="background">
+    </div>
     <div class="container">
         <div class="contact-info">
             <div class="phone" href="tel:0345771234">
@@ -196,14 +220,7 @@
                     alt="Mail Icon" height="100px" weight="100px">
                 <a style="color: black" href="http://huyminhcantho.com">huyminhcantho@gmail.com</a>
             </div>
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.6756692299077!2d105.75100961432315!3d10.043599492821317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a089a2a425f779%3A0xb3dbe439e276ed88!2sC%C3%94NG%20TY%20TNHH%20TM%20DV%20C%C3%94NG%20NGH%E1%BB%86%20HUY%20MINH%20PRO!5e0!3m2!1svi!2s!4v1654092532633!5m2!1svi!2s"
-                    width="300" height="150" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <!-- <iframe src="https://www.google.com/maps/place/C%C3%B4ng+ty+TNHH+TM+DV+C%C3%B4ng+Ngh%E1%BB%87+Huy+Minh+Pro/@10.0435995,105.7483274,17z/data=!3m1!4b1!4m6!3m5!1s0x31a089a2a425f779:0xb3dbe439e276ed88!8m2!3d10.0435995!4d105.7531983!16s%2Fg%2F11sr0h1lwp?hl=vi-VN&entry=ttu"
-                    width="200px" height="200px" frameborder="0" style="border:0"> -->
-            </div>
+
         </div>
         <div class="contact-form">
             <h2 style="font-size: 30px; font-weight: bold;">Contact Us</h2>
@@ -251,8 +268,14 @@
         </script>
     </div>
 
-
-
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.6756692299077!2d105.75100961432315!3d10.043599492821317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a089a2a425f779%3A0xb3dbe439e276ed88!2sC%C3%94NG%20TY%20TNHH%20TM%20DV%20C%C3%94NG%20NGH%E1%BB%86%20HUY%20MINH%20PRO!5e0!3m2!1svi!2s!4v1654092532633!5m2!1svi!2s"
+            width="1000px" height="500px" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- <iframe src="https://www.google.com/maps/place/C%C3%B4ng+ty+TNHH+TM+DV+C%C3%B4ng+Ngh%E1%BB%87+Huy+Minh+Pro/@10.0435995,105.7483274,17z/data=!3m1!4b1!4m6!3m5!1s0x31a089a2a425f779:0xb3dbe439e276ed88!8m2!3d10.0435995!4d105.7531983!16s%2Fg%2F11sr0h1lwp?hl=vi-VN&entry=ttu"
+            width="200px" height="200px" frameborder="0" style="border:0"> -->
+    </div>
 
 
 
@@ -269,9 +292,9 @@
 
         <div class="col-xl-12 container d-flex">
             <div class="col-xl-3  text-center">
-                <!-- <div class="box-icon"> -->
-                <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
-                <!-- </div> -->
+                <div class="box-icon">
+                    <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
+                </div>
                 <p>
                     <a href="https://s.net.vn/pBau" class="btn-delete">
                         43, Đường số 9, Khu Thới Nhựt 2, Phường An Khánh, Quận Ninh Kiều, Thành Phố Cần Thơ
@@ -334,6 +357,6 @@
                 );
             }
         </script>
-</body>
+        </body>
 
 </html>

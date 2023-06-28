@@ -48,7 +48,54 @@
         }
     </style>
     <style>
-        .daterangepicker {
+        .panel-heading {
+            padding: 10px;
+            background-color: #f5f5f5;
+        }
+
+        .justify-content-sm-center {
+            justify-content: center;
+        }
+
+        .col-md-6,
+        .col-12 {
+            margin-bottom: 10px;
+        }
+
+        .form-control {
+            width: 100%;
+
+        }
+
+        .card-body {
+            background-color: cadetblue;
+        }
+
+        /*button*/
+        .date-time {
+            display: flex;
+            align-items: center;
+        }
+
+        .buttons button {
+            margin: 0;
+            font-family: revert;
+            font-size: 20px;
+            line-height: inherit;
+        }
+
+        .container-fluid {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .row {
+            flex-basis: 50%;
+            /* Chia thành hai cột bằng nhau */
+        }
+    </style>
+
+    <!-- <style>.daterangepicker {
             position: absolute;
             color: inherit;
             background-color: #fff;
@@ -484,7 +531,7 @@
         .form-control {
             font-size: 25px
         }
-    </style>
+    </style> -->
 
 </head>
 
@@ -531,163 +578,162 @@
 
     </header>
     <!-- end slide show -->
-    <script>
-        let pathName = location.href.substring(location.href.lastIndexOf('/') + 1);
-        $(`a[href="./${pathName}"]`).addClass('active')
-    </script>
-
-    <section class="content">
-
+    <div class="content-wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <!-- Default box -->
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">
-                                2023-02-14 12:22:13
-                            </h3>
-                            <div class="card-tools">
-
-                                <button type="button" class="btn btn-tool" data-card-widget="collapse"
-                                    data-toggle="tooltip" title="Collapse">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-tool" data-card-widget="remove"
-                                    data-toggle="tooltip" title="Remove">
-                                    <i class="fa fa-times"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="videocontent">
-                                <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264"
-                                    controls poster="/img/video.jpg" preload="auto"
-                                    data-setup="{&quot;fluid&quot;: true}">
-                                    <source src="http://baokhoa.ddns.net/nncnc/area_11_f20221111.mp4"
-                                        type="video/mp4" />
-                                </video>
+                    <div class="card-group">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <div class="col-sm-12 d-flex" style="padding-top:10px; font-size:20px;">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <span>07-04-2022 12:40:18</span>
+                                        <div class="buttons" style="margin-left:760px;">
+                                            <button class="collapse-button">-</button>
+                                            <button class="exit-button">X</button>
+                                        </div>
+                                    </div>
+                                </h5>
+                                <div class="col">
+                                    <video width="1000" height="500" controls>
+                                        <source
+                                            src="https://www.youtube.com/watch?v=ElR2deqJZuY&list=RDMMElR2deqJZuY&start_radio=1"
+                                            type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    </section>
-    <script>
-        jQuery(document).ready(function ($) {
-            $('#showExportThongKe').click(function (event) {
-                event.preventDefault();
-                $('input[name="exportThongKe"]').trigger('click');
-            });
-            $('input[name="exportThongKe"]').daterangepicker({
-                timePicker24Hour: true,
-                singleDatePicker: false,
-                showDropdowns: true,
-                minYear: moment().format('y'),
-                startDate: new Date(moment())
-            });
-            $('input[name="exportThongKe"]').on('apply.daterangepicker', function (ev, picker) {
-                let start = picker.startDate.format('YYYY-MM-DD');
-                let end = picker.endDate.format('YYYY-MM-DD');
-                window.location.href = `/excel/exportThongKe?start=${start}&end=${end}`
-            });
-        });
-    </script>
-    <script>
-        var height = $("#container").height();
-        var width = $("#container").width();
-        const formatDate = 'Y-MM-DD HH:mm:ss';
 
+            <div class="row">
+                <div class="col-12">
+                    <!-- Default box -->
+                    <div class="card-group">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <div class="col-sm-12 d-flex" style="padding-top:10px; font-size:20px;">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <span>07-04-2022 12:40:18</span>
+                                        <div class="buttons" style="margin-left:760px;">
+                                            <button class="collapse-button">-</button>
+                                            <button class="exit-button">X</button>
+                                        </div>
+                                    </div>
+                                </h5>
+                                <div class="col">
+                                    <video width="1000" height="500" controls>
+                                        <source src="path/to/your/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Default box -->
+                    <div class="card-group">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <div class="col-sm-12 d-flex" style="padding-top:10px; font-size:20px;">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <span>07-04-2022 12:40:18</span>
+                                        <div class="buttons" style="margin-left:760px;">
+                                            <button class="collapse-button">-</button>
+                                            <button class="exit-button">X</button>
+                                        </div>
+                                    </div>
+                                </h5>
+                                <div class="col">
+                                    <video width="1000" height="500" controls>
+                                        <source src="path/to/your/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Default box -->
+                    <div class="card-group">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <div class="col-sm-12 d-flex" style="padding-top:10px; font-size:20px;">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <span>07-04-2022 12:40:18</span>
+                                        <div class="buttons" style="margin-left:760px;">
+                                            <button class="collapse-button">-</button>
+                                            <button class="exit-button">X</button>
+                                        </div>
+                                    </div>
+                                </h5>
+                                <div class="col">
+                                    <video width="1000" height="500" controls>
+                                        <source src="path/to/your/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
         $(document).ready(function () {
-            $("#formdata").change(function () {
-                const id = $(this).val();
-                window.location = "?id=" + id;
-            });
-        });
-        $(function () {
-            // render: filter with datetimes
-            $('input[name="startDatetime"]').daterangepicker({
-                timePicker: true,
-                timePicker24Hour: true,
-                singleDatePicker: true,
-                showDropdowns: true,
-                minYear: moment().format('y'),
-                startDate: new Date(moment('2023-06-06 00:00:00').format(formatDate)),
-            });
+            var clickCount = 0;
 
-            $('input[name="endDatetime"]').daterangepicker({
-                parentEl: '#time-container',
-                timePicker: true,
-                timePicker24Hour: true,
-                singleDatePicker: true,
-                minYear: moment().format('y'),
-                startDate: new Date(moment('2023-06-06 23:50:00').format(formatDate)),
-            });
-            // function: handle form filter
-            function handleFilterDatetime(type, ev, picker) {
-                const form = $('#form-filter');
-                let data = {
-                    startDate: moment($('[name="startDatetime"]').val()).format('YYYY-MM-DD'),
-                    endDate: moment($('[name="endDatetime"]').val()).format('YYYY-MM-DD'),
-                    startTime: moment($('[name="startDatetime"]').val()).format('HH:mm:ss'),
-                    endTime: moment($('[name="endDatetime"]').val()).format('HH:mm:ss')
-                };
-                if ((moment(data.startDate).diff(data.endDate, 'days')) > 0) {
-                    $('input[name="endDatetime"]')
-                        .data('daterangepicker')
-                        .setStartDate(moment(data.startDate).set('h', 23).set('m', 0).set('s', 0));
-                    data.endDate = moment($('[name="endDatetime"]').val()).format('YYYY-MM-DD');
-                    data.endTime = moment($('[name="endDatetime"]').val()).format('HH:mm:ss');
+            $('.collapse-button').click(function () {
+                clickCount++;
+
+                if (clickCount === 1) {
+                    $('.col').slideUp();
+                } else if (clickCount === 2) {
+                    $('.col').slideDown();
+                    clickCount = 0;
                 }
-                for (key in data) {
-                    form.find(`[name="${key}"]`).val(data[key]);
-                }
-                setTimeout(() => {
-                    form[0].submit();
-                }, 200);
-            }
-
-            // handle startDateime select
-            $('input[name="startDatetime"]').on('apply.daterangepicker', function (ev, picker) {
-                handleFilterDatetime('startDatetime', ev, picker);
-            });
-            $('input[name="endDatetime"]').on('apply.daterangepicker', function (ev, picker) {
-                handleFilterDatetime('endDatetime', ev, picker);
-            });
-            // render: charts
-            $('#container').highcharts({
-                chart: {
-                    type: 'line',
-                },
-                title: {
-                    text: ''
-                },
-                credits: {
-                    enabled: false
-                },
-                xAxis: {
-                    type: 'datetime',
-                },
-                yAxis: {
-                    title: {
-                        text: ''
-                    }
-                },
-                tooltip: {
-                    valueSuffix: ' '
-                },
-                series: [{
-                    name: '',
-                    data: "",
-                }]
             });
 
-        });
+            $('.exit-button').click(function () {
+                $('.row').remove();
 
-        Highcharts.setOptions({
-            time: {
-                timezone: 'Asia/Bangkok'
-            }
+                // Tạo phần tử thông báo
+                var notification = $('<div>').text('Phần tử đã được xóa').addClass('notification');
+                $('body').append(notification);
+
+                // Đặt thời gian tự động ẩn phần thông báo sau 3 giây
+                setTimeout(function () {
+                    notification.fadeOut(function () {
+                        $(this).remove();
+                    });
+                }, 3000);
+            });
+
         });
     </script>
 
@@ -720,7 +766,8 @@
             </div>
             <div class="col-xl-3 text-center">
                 <i class="fa fa-user"></i>
-                <p>Design by <a href="http://huyminhcantho.com" target="_blank" class="btn-delete">Huy Minh Pro</a>
+                <p>Design by <a href="http://huyminhcantho.com" target="_blank" class="btn-delete">Huy Minh
+                        Pro</a>
                 </p>
             </div>
 
