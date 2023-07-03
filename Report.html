@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html style="height: 100%; width: 100%;">
 
 <head>
     <meta charset="UTF-8">
@@ -105,7 +106,7 @@
         .card {
             color: white;
             position: relative;
-            width: 2279px;
+            width: 100%;
             height: 500px;
             overflow: hidden;
             border-radius: 10px;
@@ -126,8 +127,8 @@
             color: black;
             background-color: gainsboro;
             opacity: 0.5;
-            width: 2250px;
-            padding: 20px;
+            width: 100%;
+            padding: 0;
             text-align: center;
             font-size: 30px;
             font-weight: bold;
@@ -142,7 +143,8 @@
         }
 
         .card-body {
-            margin-top: 77px;
+            margin-top: 72px;
+            margin-left: -25%;
         }
 
         .form-row {
@@ -158,7 +160,13 @@
 
         }
 
+        .label {
+            font-size: 25px;
+            margin-left: 12px;
+        }
+
         .form-control {
+            margin-left: 10px;
             background-color: gainsboro;
             font-size: 25px;
 
@@ -215,7 +223,7 @@
     <!-- end slide show -->
 
 
-    <div class="card card-primary">
+    <div class="card">
         <div class="card-header">
             <h5 class="card-title">Export report</h5>
         </div>
@@ -223,16 +231,19 @@
             <form action="http://nnhaugiang.ddns.net/excel/exportThongKe">
                 <div class="form-row" style="font-size: 25px;">
                     <div class="col-sm-2">
-                        <div class="form-group" style="font-size: 25px">
-                            <label for=" select">Choose the output type</label>
+                        <div class="form-group">
+                            <label for=" select" style="font-size: 25px; margin-left: 12px;
+                            ">Choose the output
+                                type</label>
                             <select id="select" class="form-control" name="type">
                                 <option value="sensor_data" style="font-size: 25px">Sensor data</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-sm-2">
-                        <div class="form-group" style="font-size: 25px">
-                            <label for=" select">Choose a start date</label>
+                        <div class="form-group">
+                            <label for=" select" style="font-size: 25px;             margin-left: 12px;
+                            ">Choose a start date</label>
                             <!-- <input type="text" class="form-control date" name="start-date" readonly> -->
                             <input type="date" id="d1" class="form-control date">
 
@@ -250,7 +261,8 @@
                     </div>
                     <div class="col-sm-2">
                         <div class="form-group">
-                            <label for="select" style="font-size: 25px;">Choose an end date</label>
+                            <label for="select" style="font-size: 25px;             margin-left: 12px;
+                            ">Choose an end date</label>
                             <!-- <input type="text" class="form-control date" name="end-date" readonly> -->
                             <input type="date" id="d2" class="form-control date">
                             <p id="output"></p>

@@ -36,7 +36,8 @@
         #google_translate_element {
             position: absolute;
             top: 10px;
-            right: -30px;        }
+            right: -30px;
+        }
 
         .header__navbar a {
             font-size: 25px;
@@ -72,6 +73,17 @@
         .card-body {
             background-color: cadetblue;
             text-align: center;
+        }
+    </style>
+
+
+    <style>
+        body {
+            margin: 2rem;
+        }
+
+        .btn {
+            padding: 0px 0px;
         }
     </style>
 </head>
@@ -116,64 +128,201 @@
     </header>
     <div class="content-wrapper">
         <div class="container-fluid">
-            <div class="card">
-                <div class="card-header">
-                    <h5 class="card-title">Export report</h5>
-                </div>
-                <div class="card-body">
-                    <form action="http://nnhaugiang.ddns.net/excel/exportThongKe">
-                        <div class="form-row">
-                            <div class="col-sm-2">
-                                <div class="form-group">
-                                    <label for="select">Choose the output type</label>
-                                    <select id="select" class="form-control" name="type">
-                                        <option value="sensor_data">Sensor data</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-2">
-                                <div class="form-group">
-                                    <label for="select">Choose a start date</label>
-                                    <input type="date" id="d1" class="form-control date">
+            <div class="col-12 d-flex">
+                <!-- Default box -->
+                <div class="col-6 card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <div class="col-sm-12 d-flex" style="
+                                justify-content: space-between;
+                                ">
+                                    <div>
 
-                                    <p id="output"></p>
-                                    <script>
-                                        function calculateDays() {
-                                            var d1 = document.getElementById("d1").value;
-                                            const dateOne = new Date(d1);
-                                            const days = Math.ceil(time / (1000 * 60 * 60 * 24));
-                                            document.getElementById("output").innerHTML = days;
-                                        }
-                                    </script>
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <span>07-04-2022 12:40:18</span>
+                                    </div>
+                                    <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                        data-target="#collapseExample1" aria-expanded="false"
+                                        aria-controls="collapseExample1" style="margin-left: 60%;">
+                                        +
+                                    </button>
+                                    <button class="btn btn-primary" class="exit-button" onclick="removeCard(this)">
+                                        X
+                                    </button>
                                 </div>
-                            </div>
-                            <div class="col-sm-2">
-                                <div class="form-group">
-                                    <label for="select">Choose an end date</label>
-                                    <input type="date" id="d2" class="form-control date">
-                                    <p id="output"></p>
-                                    <script>
-                                        function calculateDays() {
-                                            var d2 = document.getElementById("d2").value;
-                                            const dateTwo = new Date(d2);
-                                            const days = Math.ceil(time / (1000 * 60 * 60 * 24));
-                                            document.getElementById("output").innerHTML = days;
-                                        }
-                                    </script>
+                            </h5>
+                            <div class="collapse" id="collapseExample1">
+                                <div class="card card-body" style="
+                                    width: 100%;
+                                    padding: 0 30px;
+                                    ">
+                                    <video style="width: 96%" controls>
+                                        <source
+                                            src="https://www.youtube.com/watch?v=ElR2deqJZuY&list=RDMMElR2deqJZuY&start_radio=1"
+                                            type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
                                 </div>
-                            </div>
-                            <div class="col-sm-2">
-                                <div class="form-group text-center">
-                                    <label for="select" class=""><i class="fa fa-file-excel"></i></label>
-                                    <input type="submit" class="form-control btn-success" value="Export">
-                                </div>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
-                    </form>
+                    </div>
+                </div>
+                <div class="col-6 card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <div class="col-sm-12 d-flex" style="
+                                justify-content: space-between;
+                                ">
+                                    <div>
+
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <span>07-04-2022 12:40:18</span>
+                                    </div>
+                                    <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                        data-target="#collapseExample2" aria-expanded="false"
+                                        aria-controls="collapseExample2" style="margin-left: 60%;">
+                                        +
+                                    </button>
+                                    <button class="btn btn-primary" class="exit-button" onclick="removeCard(this)">
+                                        X
+                                    </button>
+                                </div>
+                            </h5>
+                            <div class="collapse" id="collapseExample2">
+                                <div class="card card-body" style="
+                                    width: 100%;
+                                    padding: 0 30px;
+                                    ">
+                                    <video style="width: 96%" controls>
+                                        <source
+                                            src="https://www.youtube.com/watch?v=ElR2deqJZuY&list=RDMMElR2deqJZuY&start_radio=1"
+                                            type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex">
+                <!-- Default box -->
+                <div class="col-6 card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <div class="col-sm-12 d-flex" style="
+                                justify-content: space-between;
+                                ">
+                                    <div>
+
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <span>07-04-2022 12:40:18</span>
+                                    </div>
+                                    <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                        data-target="#collapseExample3" aria-expanded="false"
+                                        aria-controls="collapseExample3" style="margin-left: 60%;">
+                                        +
+                                    </button>
+                                    <button class="btn btn-primary" class="exit-button" onclick="removeCard(this)">
+                                        X
+                                    </button>
+                                </div>
+                            </h5>
+                            <div class="collapse" id="collapseExample3">
+                                <div class="card card-body" style="
+                                    width: 100%;
+                                    padding: 0 30px;
+                                    ">
+                                    <video style="width: 96%" controls>
+                                        <source
+                                            src="https://www.youtube.com/watch?v=ElR2deqJZuY&list=RDMMElR2deqJZuY&start_radio=1"
+                                            type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <div class="col-sm-12 d-flex" style="
+                                justify-content: space-between;
+                                ">
+                                    <div>
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <span>07-04-2022 12:40:18</span>
+                                    </div>
+                                    <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                        data-target="#collapseExample4" aria-expanded="false"
+                                        aria-controls="collapseExample4" style="margin-left: 60%;">
+                                        -
+                                    </button>
+                                    <!-- <button class="btn btn-primary" class="collapse-button" aria-expanded="false"
+                                        onclick="toggleCollapse(this)">+</button> -->
+                                    <button class="btn btn-primary" class="exit-button" onclick="removeCard(this)">
+                                        X
+                                    </button>
+                                </div>
+                            </h5>
+                            <div class="collapse" id="collapseExample4">
+                                <div class="card card-body" style="
+                                    width: 100%;
+                                    padding: 0 30px;
+                                    ">
+                                    <video style="width: 96%" controls>
+                                        <source
+                                            src="https://www.youtube.com/watch?v=ElR2deqJZuY&list=RDMMElR2deqJZuY&start_radio=1"
+                                            type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        $('.collapse-button').click(function () {
+            var buttonCount = 0;
+            $(this).toggleClass("active");
+            if ($(this).hasClass("active")) {
+                $(this).text("+");
+            } else {
+                $(this).text("-");
+            }
+
+            $(this).closest('.card').find('.content-wrapper').toggle();
+            $('.collapse-button').each(function () {
+                buttonCount++;
+                $(this).attr('id', 'collapseExample' + buttonCount);
+            });
+        });
+
+    </script>
+    <script>
+        function removeCard(button) {
+            // Thực hiện hành động khi nút exit-button được click
+            // Ví dụ: Xóa card chứa nút exit-button
+            var card = button.closest('.card');
+            card.remove();
+        }
+    </script>
+
+
+
+
 
     <!-- footer -->
     <footer class="footer ">
@@ -189,7 +338,10 @@
                 <!-- </div> -->
                 <p>
                     <a href="https://s.net.vn/pBau" class="btn-delete">
-                        43, Đường số 9, Khu Thới Nhựt 2, Phường An Khánh, Quận Ninh Kiều, Thành Phố Cần Thơ
+                        43, Đường số 9, Khu Thới Nhựt 2, Phường An Khánh, Quận Ninh
+                        Kiều,
+                        Thành
+                        Phố Cần Thơ
                     </a>
                 </p>
             </div>
@@ -204,7 +356,8 @@
             </div>
             <div class="col-xl-3 text-center">
                 <i class="fa fa-user"></i>
-                <p>Design by <a href="http://huyminhcantho.com" target="_blank" class="btn-delete">Huy Minh Pro</a>
+                <p>Design by <a href="http://huyminhcantho.com" target="_blank" class="btn-delete">Huy
+                        Minh Pro</a>
                 </p>
             </div>
 
