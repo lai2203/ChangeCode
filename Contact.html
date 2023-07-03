@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html style="height: 100%; width: 100%;">
 
 <head>
     <meta charset="UTF-8">
@@ -41,10 +42,39 @@
 
 </head>
 <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        width: 100%;
+        height: 10%;
+    }
+
+    .content {
+        width: 100%;
+        height: 80%;
+    }
+
+    .footer {
+        width: 100%;
+        height: 10%;
+    }
+
+    .container {
+        display: flex;
+        height: 100%;
+    }
+
+    .content {
+        flex: 1;
+    }
+
     #google_translate_element {
         position: absolute;
         top: 10px;
-        right: 10px;
+        right: -30px;
     }
 
     .header__navbar a {
@@ -131,17 +161,29 @@
         width: 100%;
         margin-bottom: 10px;
         padding: 5px;
+        border-radius: 20px;
+        border-color: cadetblue;
+
     }
 
     form button {
         display: block;
         width: 100%;
         padding: 10px;
-        background-color: #007bff;
+        background-color: cadetblue;
         color: #fff;
         border: none;
-        border-radius: 5px;
+        border-radius: 20px;
         cursor: pointer;
+        border-color: cadetblue;
+
+
+    }
+
+    .form button:hover {
+        transition: transform 0.3s ease;
+        border-color: cadetblue;
+
     }
 
     #resultContainer {
@@ -149,10 +191,28 @@
         margin-top: 20px;
     }
 
+
     .map {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .contact-info {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .phone:hover,
+    .mail:hover {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease;
+    }
+
+    /* Optional styles for visual effect */
+    .phone:hover img,
+    .mail:hover img {
+        filter: brightness(75%);
     }
 </style>
 
@@ -210,15 +270,12 @@
     </div>
     <div class="container">
         <div class="contact-info">
-            <div class="phone" href="tel:0345771234">
-                <img src="https://media.istockphoto.com/id/1074894352/vi/vec-to/bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-%C4%91i%E1%BB%87n-tho%E1%BA%A1i-%C4%91en-tr%E1%BA%AFng-bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-%C4%91i%E1%BB%87n-tho%E1%BA%A1i-vector-%C4%91%C6%B0%E1%BB%A3c-ph%C3%A2n-l%E1%BA%ADp-tr%C3%AAn-n%E1%BB%81n-tr%E1%BA%AFng.jpg?s=612x612&w=0&k=20&c=q10tnKyMShQQ6iWKcivFQLpugATdAm0d_xyH5WRxtyg="
-                    alt="Phone Icon" height="100px">
-                <a style="color: black" href="tel:0345771234" style="font-size: 30px">0345771234</a>
+            <div class="phone">
+                <a href="tel:0345771234"><img src="./img/logo/phone.jpg" alt="Phone Icon" height="300px"></a>
             </div>
             <div class="mail">
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/002/205/854/small/email-icon-free-vector.jpg"
-                    alt="Mail Icon" height="100px" weight="100px">
-                <a style="color: black" href="http://huyminhcantho.com">huyminhcantho@gmail.com</a>
+                <a href="http://huyminhcantho.com"><img src="./img/logo/mail.jpg" alt="Mail Icon" height="300px"
+                        weight="300px"> </a>
             </div>
 
         </div>

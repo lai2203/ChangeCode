@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
   font-family: tahoma, arial, sans-serif, "lucida grande";
-  font-size: 20px;
+  font-size: 15px;
 }
-
+/* .footer {
+  font-size: 20px;
+} */
 /* CSS của menu */
 .header {
   padding: 0 85px;
@@ -59,7 +61,7 @@
   cursor: pointer;
 }
 .trangchu {
-  margin: 0 12px;
+  margin: 0 0;
   font-size: 18px;
   padding: 10px 0 15px 0;
   cursor: pointer;
